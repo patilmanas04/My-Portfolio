@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import styled from "styled-components";
 import { DiCssdeck } from "react-icons/di"
 
-const Nav = styled.div`
+const Nav = styled.nav`
     background: ${({theme}) => theme.card_light};
     height: 80px;
     width: 100%;
