@@ -68,7 +68,7 @@ const NavItems = styled.ul`
     gap: 32px;
     list-style: none;
     
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 850px){
         display: none;
     }
 `
@@ -86,7 +86,7 @@ const NavLink = styled.a`
 
 const ButtonContainer = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     width: 80%;
     height: 100%;
@@ -136,7 +136,6 @@ const Navbar = ()=>{
                         display: "flex",
                         alignItems: "center",
                         color: "white",
-                        marginBottom: "20px",
                         cursor: "pointer",
                     }}>
                         <DiCssdeck size="3rem" /><Span>Portfolio</Span>
