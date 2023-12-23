@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link as LinkR } from "react-router-dom";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import { DiCssdeck } from "react-icons/di"
+import { FaBars } from "react-icons/fa"
 
 const Nav = styled.nav`
     background: ${({theme}) => theme.card_light};
@@ -48,7 +49,7 @@ const NavLogo = styled(LinkR)`
 const MobileIcon = styled.div`
     display: none;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 850px){
         display: block;
         position: absolute;
         top: 0;
@@ -92,7 +93,7 @@ const ButtonContainer = styled.div`
     height: 100%;
     padding: 0 6px;
 
-    @media screen and (max-width: 640px){
+    @media screen and (max-width: 850px){
         display: none;
     }
 `
@@ -126,7 +127,45 @@ const Span = styled.span`
     font-size: 18px;
 `
 
+const MobileMenu = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    top: 80;
+    right: 0;
+    width: 100%;
+    padding: 12px 40px 24px 20px;
+    background: ${({theme}) => theme.card_light+99};
+    transition: all 0.3s ease-in-out;
+    transform: ${({isOpen}) => (isOpen ? "translateX(0)" : "translateX(100%)")};
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    opacity: ${({isOpen}) => (isOpen ? "1" : "0")};
+    z-index: ${({isOpen}) => isOpen ? "1" : "-1"};
+`
+
+const MobileMenuLink = styled(LinkR)`
+    color: ${({theme}) => theme.text_primary};
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        color: ${({theme}) => theme.primary};
+    }
+`
+
 const Navbar = ()=>{
+    const [isOpen, setIsOpen] = useState(false);
+
+    const theme = useTheme()
+
+    const setIsOpenValue = ()=>{
+        setIsOpen(!isOpen);
+    }
+
     return (
         <>
         <Nav>
@@ -141,7 +180,9 @@ const Navbar = ()=>{
                         <DiCssdeck size="3rem" /><Span>Portfolio</Span>
                     </a>
                 </NavLogo>
-                <MobileIcon></MobileIcon>
+                <MobileIcon>
+                    <FaBars onClick={setIsOpenValue}/>
+                </MobileIcon>
 
                 <NavItems>
                     <NavLink href="#about">About</NavLink>
@@ -154,7 +195,55 @@ const Navbar = ()=>{
                 <ButtonContainer>
                     <GithubButton>Github Profile</GithubButton>
                 </ButtonContainer>
-            </NavContainer>            
+            </NavContainer>
+            {
+                isOpen && (
+                    <MobileMenu>
+                        <MobileMenuLink
+                            href="#about"
+                            onClick={setIsOpenValue}
+                        >
+                            About
+                        </MobileMenuLink>
+                        <MobileMenuLink
+                            href="#skills"
+                            onClick={setIsOpenValue}
+                        >
+                            Skills
+                        </MobileMenuLink>
+                        <MobileMenuLink
+                            href="#experience"
+                            onClick={setIsOpenValue}
+                        >
+                            Experience
+                        </MobileMenuLink>
+                        <MobileMenuLink
+                            href="#projects"
+                            onClick={setIsOpenValue}
+                        >
+                            Projects
+                        </MobileMenuLink>
+                        <MobileMenuLink
+                            href="#education"
+                            onClick={setIsOpenValue}
+                        >
+                            Education
+                        </MobileMenuLink>
+                        <GithubButton 
+                            style={{
+                                padding: "10px 16px",
+                                background: `${theme.primary}`,
+                                color: "white",
+                                width: "max-content",
+                            }}
+                            href="/"
+                            target="_blank"
+                        >
+                            Github Profile
+                        </GithubButton>
+                    </MobileMenu>
+                )
+            }          
         </Nav>
         </>
     )
