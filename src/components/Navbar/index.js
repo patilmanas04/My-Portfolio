@@ -3,6 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import styled, { useTheme } from "styled-components";
 import { DiCssdeck } from "react-icons/di"
 import { FaBars } from "react-icons/fa"
+import { Bio } from "../../data/constants";
 
 const Nav = styled.nav`
     background: ${({theme}) => theme.card_light};
@@ -98,8 +99,9 @@ const ButtonContainer = styled.div`
     }
 `
 
-const GithubButton = styled.button`
+const GithubButton = styled.a`
     background: transparent;
+    text-decoration: none;
     color: ${({theme}) => theme.primary};
     border: 1.8px solid ${({theme}) => theme.primary};
     border-radius: 20px;
@@ -193,7 +195,7 @@ const Navbar = ()=>{
                 </NavItems>
 
                 <ButtonContainer>
-                    <GithubButton>Github Profile</GithubButton>
+                    <GithubButton href={Bio.github}>Github Profile</GithubButton>
                 </ButtonContainer>
             </NavContainer>
             {
@@ -236,7 +238,7 @@ const Navbar = ()=>{
                                 color: "white",
                                 width: "max-content",
                             }}
-                            href="/"
+                            href={Bio.github}
                             target="_blank"
                         >
                             Github Profile
