@@ -153,7 +153,7 @@ const SubTitle = styled.div`
     } 
 `
 
-const GithubProfileButton = styled.a`
+const CheckResume = styled.a`
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -232,7 +232,7 @@ const HeroSection = ()=>{
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
-                        <GithubProfileButton href={Bio.github} target="_blank">My Github Profile</GithubProfileButton>
+                        <CheckResume href={Bio.github} target="_blank">Check Resume</CheckResume>
                     </HeroLeftContainer>
                     <HeroRightContainer>
                         <Image src={hero} alt="Hero"/>
