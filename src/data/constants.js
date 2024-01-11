@@ -171,7 +171,7 @@ export const Experiences = [
     },
 ];
   
-export const education = [
+export const Education = [
     {
         id: 0,
         img: "https://media.licdn.com/dms/image/C560BAQE4UC9Z_k3c7A/company-logo_200_200/0/1579422507409?e=1692230400&v=beta&t=HJssPsrwwkAJAsvFiVIYPdM8GzUuuSK5YlATKgLx3Bc",
@@ -201,7 +201,7 @@ export const education = [
     },
 ];
   
-export const projects = [
+export const Projects = [
     {
         id: 9,
         title: "Trackify",
@@ -286,7 +286,7 @@ export const projects = [
         category: "machine learning",
         github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
         webapp: "https://brain-tumor.netlify.app/",
-        member: [
+        members: [
         {
             name: "Rishav Chanda",
             img: "https://avatars.githubusercontent.com/u/64485885?v=4",

@@ -4,14 +4,15 @@ import { darkTheme, lightTheme } from './utils/Themes';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import SkillsSection from './components/SkillsSection';
-import Education from './components/Education';
+import EducationSection from './components/EducationSection';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Experience from './components/Experience';
+import ProjectsSection from './components/ProjectsSection';
 
 const Body = styled.div`
   background-color: ${({theme}) => theme.bg};
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
 `
 
@@ -41,7 +42,10 @@ function App() {
           <Wrapper>
             <SkillsSection />
             <Experience />
-            <Education />
+          </Wrapper>
+          <ProjectsSection />
+          <Wrapper>
+            <EducationSection />
           </Wrapper>
         </Body>
       </Router>
