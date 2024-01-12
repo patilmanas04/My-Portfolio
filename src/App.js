@@ -8,6 +8,7 @@ import EducationSection from './components/EducationSection';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Experience from './components/Experience';
 import ProjectsSection from './components/ProjectsSection';
+import Contact from './components/Contact';
 
 const Body = styled.div`
   background-color: ${({theme}) => theme.bg};
@@ -47,6 +48,7 @@ function App() {
           <Wrapper>
             <EducationSection />
           </Wrapper>
+          <Contact />
         </Body>
       </Router>
     </ThemeProvider>
