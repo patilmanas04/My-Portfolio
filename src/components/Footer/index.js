@@ -102,7 +102,7 @@ const Footer = () => {
                     <SocialMediaIcon href={Bio.insta}><InstagramIcon/></SocialMediaIcon>
                 </SocialMediaIcons>
                 <Copyright>
-                    @copy; 2024 Manas Patil. All rights reserved
+                    &copy; 2024 Manas Patil. All rights reserved
                 </Copyright>
             </FooterWrapper>
         </FooterContainer>

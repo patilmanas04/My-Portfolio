@@ -27,20 +27,23 @@ const HeroBg = styled.div`
     position: absolute;
     display: flex;
     justify-content: end;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
-    left: 50%;
-    overflow: hidden;
-    width: 80%;
+    left: 0;
+    width: 100%;
     height: 100%;
+    max-width: 1360px;
+    overflow: hidden;
     padding: 0 30px;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 
-    @media screen and (max-width: 960px){
-        padding: 0 0px;
+    @media (max-width: 960px) {
         justify-content: center;
+        padding: 0 0px;
     }
 `
 
@@ -79,20 +82,19 @@ const HeroLeftContainer = styled.div`
 
 const HeroRightContainer = styled.div`
     width: 100%;
-    order: 2;
     display: flex;
-    justify-content: center;
+    order: 2;
+    justify-content: end;
     gap: 12px;
-
-    @media screen and (max-width:960px){
+    
+    @media (max-width: 960px) {
         order: 1;
         justify-content: center;
         align-items: center;
         margin-bottom: 80px;
     }
 
-    @media screen and (max-width: 640px){
-        order: 1;
+    @media (max-width: 640px) {
         margin-bottom: 30px;
     }
 `
