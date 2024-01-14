@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaGithub } from "react-icons/fa";
+import { IoGlobeOutline } from "react-icons/io5";
 
 const Card = styled.div`
     width: 330px;
     height: 490px;
     background-color: ${({theme}) => theme.card};
-    cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
     overflow: hidden;
@@ -45,12 +46,6 @@ const Details = styled.div`
     flex-direction: column;
     gap: 0px;
     padding: 0px 2px;
-`
-
-const Members = styled.div`
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
 `
 
 const Tag = styled.span`
@@ -96,14 +91,20 @@ const Description = styled.div`
     max-width: 100%;
 `
 
-const Avatar = styled.img`
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    margin-left: -10px;
-    background-color: ${({theme}) => theme.white};
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 3px solid ${({theme}) => theme.card};
+const ActionButtons = styled.div`
+    width: 100%;
+    display: flex;
+    gap: 0.6rem;
+    margin: 0.6rem 0;
+`
+
+const AnchorButton = styled.a`
+    text-decoration: none; 
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
 `
 
 const ProjectCard = (props) => {
@@ -125,13 +126,14 @@ const ProjectCard = (props) => {
                 <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
             </Details>
-            <Members>
-                {
-                    project.members?.map((member) => {
-                        return <Avatar src={member.img}/>
-                    })
-                }
-            </Members>
+            <ActionButtons>
+                <AnchorButton href='#'>
+                    <FaGithub />
+                </AnchorButton>
+                <AnchorButton href='#'>
+                    <IoGlobeOutline />
+                </AnchorButton>
+            </ActionButtons>
         </Card>
         </>
     )
