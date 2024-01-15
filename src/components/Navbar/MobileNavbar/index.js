@@ -26,14 +26,26 @@ const MobileMenuContainer = styled.div`
     padding: 2rem;
 `
 
-const Logo = styled.img`
-    margin-bottom: 3rem;
+const Logo = styled.a`
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 12rem;
+    height: auto;
+    font-family: 'Handlee', cursive;
+    cursor: pointer;
+    margin-bottom: 4rem !important;
+
+    @media screen and (max-width: 425px){
+        width: 10rem;
+        height: auto;
+    }
 `
 
 const NavItemList = styled.ul`
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
 `
 
@@ -99,7 +111,7 @@ const MobileNavbar = ({isOpen, toggleMenu}) => {
             isOpen &&
             <MobileMenu onClick={toggleMenu}>
                 <MobileMenuContainer>
-                    <Logo alt="logo"/>
+                    <Logo href='#'>Manas Patil</Logo>
 
                     <NavItemList>
                         <NavItem>

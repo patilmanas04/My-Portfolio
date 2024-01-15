@@ -28,8 +28,13 @@ const NavContent = styled.div`
 `
 
 const Logo = styled.a`
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
     width: 12rem;
     height: auto;
+    font-family: 'Handlee', cursive;
+    cursor: pointer;
 
     @media screen and (max-width: 425px){
         width: 10rem;
@@ -143,7 +148,7 @@ const Navbar = () => {
 
         <NavWrapper>
             <NavContent>
-                <Logo src="" alt="logo"/>
+                <Logo href='#'>Manas Patil</Logo>
 
                 <NavItemList>
                     <NavItem>
