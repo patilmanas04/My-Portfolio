@@ -48,9 +48,11 @@ const Desc = styled.div`
     text-align: center;
     max-width: 600px;
     color: ${({ theme }) => theme.text_secondary};
+
     @media (max-width: 768px) {
         margin-top: 12px;
         font-size: 16px;
+        padding: 0 8px;
     }
 `;
 
