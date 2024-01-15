@@ -8,6 +8,9 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import styled from "styled-components";
 import ExperienceCard from "../Cards/ExperienceCard";
+import { PiSmileySadLight } from "react-icons/pi";
+import { HiLocationMarker } from "react-icons/hi";
+import NoExperienceCard from "../Cards/NoExperienceCard";
 
 const Container = styled.div`
     display: flex;
@@ -19,7 +22,7 @@ const Container = styled.div`
     padding: 40px 0 80px 0;
 
     @media screen and (max-width: 960px){
-        padding: 20px 0 40px 0;
+        padding: 20px 10px 40px 10px;
     }
 `
 
@@ -43,7 +46,7 @@ const Title = styled.div`
 
     @media screen and (max-width: 768px){
         margin-top: 12px;
-        font-style: 32px;
+        font-size: 32px;
     }
 `
 
@@ -54,7 +57,7 @@ const Desc = styled.div`
     color: ${({ theme }) => theme.text_secondary};
 
     @media screen and (max-width: 768px){
-        font-style: 16px;
+        font-size: 16px;
     }
 `
 
@@ -77,18 +80,21 @@ const Experience = () => {
                 <Title>Experience</Title>
                 <Desc>Here are some of my projects</Desc>
                 <TimeLineSection>
-                    <Timeline>
+                    <Timeline position="alternate">
                         {
                             Experiences.map((experience, index) => {
                                 return <TimelineItem>
                                     <TimelineSeparator color="secondary">
-                                        <TimelineDot variant="outlined" color="secondary"/>
-                                            {
-                                                index !== Experiences.length-1 && <TimelineConnector style={{background: "#854CE6"}}/>
-                                            }
+                                        <TimelineDot color="secondary">
+                                            <HiLocationMarker color="#fff" size="2rem"/>
+                                        </TimelineDot>
+                                        {
+                                            index !== Experiences.length-1 && <TimelineConnector style={{background: "#854CE6"}}/>
+                                        }
                                     </TimelineSeparator>
                                     <TimelineContent sx={{py: "12px", px: 2}}>
-                                        <ExperienceCard experience={experience}/>
+                                        {/* <ExperienceCard experience={experience}/> */}
+                                        <NoExperienceCard />
                                     </TimelineContent>
                                 </TimelineItem>
                             })
