@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Bio } from '../../../data/constants'
+import { DiCssdeck } from 'react-icons/di'
 
 const MobileMenu = styled.div`
     width: 100vw;
@@ -30,14 +31,12 @@ const Logo = styled.a`
     color: #ffffff;
     text-decoration: none;
     font-size: 1.5rem;
-    width: 12rem;
     height: auto;
     font-family: 'Handlee', cursive;
     cursor: pointer;
-    margin-bottom: 4rem !important;
+    margin-bottom: 1.5rem !important;
 
     @media screen and (max-width: 425px){
-        width: 10rem;
         height: auto;
     }
 `
@@ -101,6 +100,11 @@ const GithubProfileButton = styled.a`
         color: #a993fe;
         background: #000;
         outline: 1.5px solid #a993fe;
+    }
+
+    @media screen and (max-width: 390px){
+        font-size: 0.75rem;
+        padding: 0.3rem 1rem;
     }
 `
 

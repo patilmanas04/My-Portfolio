@@ -32,7 +32,7 @@ const Title = styled.div`
 
     @media screen and (max-width: 768px){
         margin-top: 12px;
-        font-style: 32px;
+        font-size: 32px;
     }
 `
 
@@ -43,7 +43,8 @@ const Desc = styled.div`
     color: ${({ theme }) => theme.text_secondary};
 
     @media screen and (max-width: 768px){
-        font-style: 16px;
+        font-size: 16px;
+        padding: 0 8px;
     }
 `
 

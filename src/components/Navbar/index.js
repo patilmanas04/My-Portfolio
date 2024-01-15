@@ -4,6 +4,7 @@ import { Bio } from '../../data/constants'
 import { FaBars } from "react-icons/fa"
 import { RxCross2 } from "react-icons/rx";
 import MobileNavbar from './MobileNavbar'
+import { DiCssdeck } from "react-icons/di";
 
 const NavWrapper = styled.nav`
     background: ${({theme}) => theme.card_light};
@@ -31,15 +32,12 @@ const Logo = styled.a`
     color: #ffffff;
     text-decoration: none;
     font-size: 1.5rem;
-    width: 12rem;
     height: auto;
     font-family: 'Handlee', cursive;
     cursor: pointer;
-
     @media screen and (max-width: 425px){
-        width: 10rem;
         height: auto;
-    }
+    } 
 `
 
 const NavItemList = styled.ul`

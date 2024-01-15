@@ -128,9 +128,15 @@ const TextLoop = styled.div`
     }
 
     @media screen and (max-width: 640px){
-        font-style: 22px;
+        font-size: 28
+        px;
         line-height: 48px;
         margin-bottom: 16px; 
+    }
+
+    @media screen and (max-width: 490px){
+        flex-direction: column;
+        gap: 0;
     }
 `
 
@@ -140,7 +146,7 @@ const Span = styled.span`
 `
 
 const SubTitle = styled.div`
-    font-style: 20px;
+    font-size: 20px;
     color: ${({ theme }) => theme.text_primary + 95};
     line-height: 32px;
     margin-bottom: 42px;
@@ -150,7 +156,7 @@ const SubTitle = styled.div`
     }
 
     @media screen and (max-width: 640px){
-        font-style: 16px;
+        font-size: 16px;
         line-height: 32px;
     } 
 `
@@ -167,7 +173,7 @@ const CheckResume = styled.a`
     color: ${({ theme }) => theme.white};
     border-radius: 20px;
     cursor: pointer;
-    font-style: 20px;
+    font-size: 20px;
     font-weight: 600;
     transition: all 0.2s ease-in-out !important;
     background: hsla(271, 100%, 50%, 1);
@@ -185,7 +191,7 @@ const CheckResume = styled.a`
 
     @media screen and (max-width: 640px){
         padding: 12px 0;
-        font-style: 18px;
+        font-size: 18px;
     }
 `
 
@@ -232,7 +238,7 @@ const HeroSection = ()=>{
                 <HeroLeftContainer>
                     <Title>Hi, I am<br/>{Bio.name}</Title>
                     <TextLoop>
-                        I am a 
+                        I am a
                         <Span>
                             <Typewriter
                                 options={{
