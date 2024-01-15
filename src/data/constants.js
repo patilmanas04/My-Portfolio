@@ -192,7 +192,7 @@ export const Projects = [
         description:
         "A personal portfolio website showcasing skills, projects, experiences, and a contact form for seamless communication.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/MyPortfolioWebApplicationScreeshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/MyPortfolioWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
             "EmailJs",
