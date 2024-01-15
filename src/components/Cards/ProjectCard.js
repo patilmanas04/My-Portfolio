@@ -68,17 +68,6 @@ const Title = styled.div`
     -webkit-box-orient: vertical;
 `
 
-const Date = styled.div`
-    font-size: 12px;
-    font-weight: 400;
-    margin-left: 2px;
-    color: ${({theme}) => theme.text_secondary + 80};
-
-    @media screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
-
 const Description = styled.div`
     font-weight: 400;
     color: ${({theme}) => theme.text_secondary + 99};
@@ -123,16 +112,21 @@ const ProjectCard = (props) => {
             </Tags>
             <Details>
                 <Title>{project.title}</Title>
-                <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
             </Details>
             <ActionButtons>
-                <AnchorButton href='#'>
-                    <FaGithub />
-                </AnchorButton>
-                <AnchorButton href='#'>
-                    <IoGlobeOutline />
-                </AnchorButton>
+                {
+                    project.github &&
+                    <AnchorButton href='#'>
+                        <FaGithub />
+                    </AnchorButton>
+                }
+                {
+                    project.webapp &&
+                    <AnchorButton href='#'>
+                        <IoGlobeOutline />
+                    </AnchorButton>
+                }
             </ActionButtons>
         </Card>
         </>
