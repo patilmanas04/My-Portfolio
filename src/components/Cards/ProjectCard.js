@@ -61,20 +61,15 @@ const Title = styled.div`
     font-size: 20px;
     font-weight: 600;
     color: ${({theme}) => theme.text_secondary};
-    text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 100%;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    height: auto;
 `
 
 const Description = styled.div`
     font-weight: 400;
     color: ${({theme}) => theme.text_secondary + 99};
     overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
     display: -webkit-box;
     margin-top: 8px;
     max-width: 100%;
@@ -117,13 +112,13 @@ const ProjectCard = (props) => {
             <ActionButtons>
                 {
                     project.github &&
-                    <AnchorButton href='#'>
+                    <AnchorButton href={project.github}>
                         <FaGithub />
                     </AnchorButton>
                 }
                 {
                     project.webapp &&
-                    <AnchorButton href='#'>
+                    <AnchorButton href={project.webapp}>
                         <IoGlobeOutline />
                     </AnchorButton>
                 }
