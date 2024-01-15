@@ -47,7 +47,6 @@ function App() {
           </Wrapper>
           <ProjectsSection />
           <Wrapper>
-            <EducationSection />
             <Contact />
           </Wrapper>
           <Footer />

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from 'typewriter-effect';
 import HeroBgAnimation from "../HeroBgAnimation";
@@ -189,6 +189,16 @@ const CheckResume = styled.a`
     }
 `
 
+const imageAnimation = keyframes`
+    0%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(15px);
+    }
+`
+
 const Image = styled.img`
     width: 100%;
     height: 100%;
@@ -198,6 +208,7 @@ const Image = styled.img`
     object-position: center;
     position: relative;
     z-index: 1;
+    animation: ${imageAnimation} 1.4s infinite alternate-reverse ease-in-out;
 
     @media screen and (max-width: 768px){
         max-width: 400px;
@@ -213,35 +224,33 @@ const Image = styled.img`
 const HeroSection = ()=>{
     return (
         <>
-        <div id="about">
-            <HeroContainer>
-                <HeroBg>
-                    <HeroBgAnimation/>
-                </HeroBg>
-                <HeroInnerContainer>
-                    <HeroLeftContainer>
-                        <Title>Hi, I am<br/>{Bio.name}</Title>
-                        <TextLoop>
-                            I am a 
-                            <Span>
-                                <Typewriter
-                                    options={{
-                                        strings: Bio.roles,
-                                        autoStart: true,
-                                        loop: true,
-                                    }}
-                                />
-                            </Span>
-                        </TextLoop>
-                        <SubTitle>{Bio.description}</SubTitle>
-                        <CheckResume href={Bio.github} target="_blank">Check Resume</CheckResume>
-                    </HeroLeftContainer>
-                    <HeroRightContainer>
-                        <Image src={hero} alt="Hero"/>
-                    </HeroRightContainer>
-                </HeroInnerContainer>
-            </HeroContainer>
-        </div>
+        <HeroContainer id="about">
+            <HeroBg>
+                <HeroBgAnimation/>
+            </HeroBg>
+            <HeroInnerContainer>
+                <HeroLeftContainer>
+                    <Title>Hi, I am<br/>{Bio.name}</Title>
+                    <TextLoop>
+                        I am a 
+                        <Span>
+                            <Typewriter
+                                options={{
+                                    strings: Bio.roles,
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </Span>
+                    </TextLoop>
+                    <SubTitle>{Bio.description}</SubTitle>
+                    <CheckResume href={Bio.github} target="_blank">Check Resume</CheckResume>
+                </HeroLeftContainer>
+                <HeroRightContainer>
+                    <Image src={hero} alt="Hero"/>
+                </HeroRightContainer>
+            </HeroInnerContainer>
+        </HeroContainer>
         </>
     )
 }
