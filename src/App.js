@@ -4,7 +4,6 @@ import { darkTheme, lightTheme } from './utils/Themes';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import SkillsSection from './components/SkillsSection';
-import EducationSection from './components/EducationSection';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Experience from './components/Experience';
 import ProjectsSection from './components/ProjectsSection';
