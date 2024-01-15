@@ -130,12 +130,6 @@ const ProjectsSection = () => {
                         <ToggleButton active onClick={() => setToggle("android app")}>ANDROID APP'S</ToggleButton> :
                         <ToggleButton onClick={() => setToggle("android app")}>ANDROID APP'S</ToggleButton>
                     }
-                    <Divider/>
-                    {
-                        toggle == "machine learning" ? 
-                        <ToggleButton active onClick={() => setToggle("machine learning")}>Machine Learning</ToggleButton> :
-                        <ToggleButton onClick={() => setToggle("machine learning")}>MACHINE LEARNING</ToggleButton>
-                    }
                 </ToggleButtonGroup>
 
                 <CardContainer>
