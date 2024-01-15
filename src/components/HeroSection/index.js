@@ -244,7 +244,7 @@ const HeroSection = ()=>{
                         </Span>
                     </TextLoop>
                     <SubTitle>{Bio.description}</SubTitle>
-                    <CheckResume href={Bio.github} target="_blank">Check Resume</CheckResume>
+                    <CheckResume href={Bio.resume} target="_blank">Check Resume</CheckResume>
                 </HeroLeftContainer>
                 <HeroRightContainer>
                     <Image src={hero} alt="Hero"/>
