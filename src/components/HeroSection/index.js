@@ -40,6 +40,7 @@ const HeroBg = styled.div`
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    z-index: -10;
 
     @media (max-width: 960px) {
         justify-content: center;
@@ -232,29 +233,31 @@ const HeroSection = ()=>{
         <>
         <HeroContainer id="about">
             <HeroBg>
-                <HeroBgAnimation/>
+                <HeroBgAnimation />
             </HeroBg>
             <HeroInnerContainer>
-                <HeroLeftContainer>
-                    <Title>Hi, I am<br/>{Bio.name}</Title>
-                    <TextLoop>
-                        I am a
-                        <Span>
-                            <Typewriter
-                                options={{
-                                    strings: Bio.roles,
-                                    autoStart: true,
-                                    loop: true,
-                                }}
-                            />
-                        </Span>
-                    </TextLoop>
-                    <SubTitle>{Bio.description}</SubTitle>
-                    <CheckResume href={Bio.resume} target="_blank">Check Resume</CheckResume>
-                </HeroLeftContainer>
-                <HeroRightContainer>
-                    <Image src={hero} alt="Hero"/>
-                </HeroRightContainer>
+                <HeroInnerContainer>
+                    <HeroLeftContainer>
+                        <Title>Hi, I am<br/>{Bio.name}</Title>
+                        <TextLoop>
+                            I am a
+                            <Span>
+                                <Typewriter
+                                    options={{
+                                        strings: Bio.roles,
+                                        autoStart: true,
+                                        loop: true
+                                    }}
+                                />
+                            </Span>
+                        </TextLoop>
+                        <SubTitle>{Bio.description}</SubTitle>
+                        <CheckResume href={Bio.resume} target="_blank">Check Resume</CheckResume>
+                    </HeroLeftContainer>
+                    <HeroRightContainer>
+                        <Image src={hero} alt="Hero"/>
+                    </HeroRightContainer>
+                </HeroInnerContainer>
             </HeroInnerContainer>
         </HeroContainer>
         </>
