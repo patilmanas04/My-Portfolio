@@ -94,6 +94,10 @@ const AnchorButton = styled.a`
 const ProjectCard = (props) => {
     const {project} = props
 
+    const iconStyles = {
+        color: "#854CE6 ",
+    }
+
     return (
         <>
         <Card>
@@ -113,13 +117,13 @@ const ProjectCard = (props) => {
                 {
                     project.github &&
                     <AnchorButton href={project.github}>
-                        <FaGithub />
+                        <FaGithub style={iconStyles}/>
                     </AnchorButton>
                 }
                 {
                     project.webapp &&
                     <AnchorButton href={project.webapp}>
-                        <IoGlobeOutline />
+                        <IoGlobeOutline style={iconStyles}/>
                     </AnchorButton>
                 }
             </ActionButtons>
