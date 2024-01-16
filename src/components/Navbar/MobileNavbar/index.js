@@ -28,13 +28,14 @@ const MobileMenuContainer = styled.div`
 `
 
 const Logo = styled.a`
+    display: block;
     color: #ffffff;
     text-decoration: none;
     font-size: 1.5rem;
     height: auto;
     font-family: 'Handlee', cursive;
     cursor: pointer;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.4rem;
 
     @media screen and (max-width: 425px){
         height: auto;
