@@ -25,6 +25,20 @@ const Card = styled.div`
     gap: 12px;
     transition: all 0.3s ease-in-out;
 
+    &::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #2E1D4A;
+        border-left: 0.1px solid #306ee8;
+        border-top: 0.1px solid #306ee8;
+        position: absolute;
+        z-index: 999;
+        left: 134px;
+        top: 27px;
+        transform: rotate(-45deg);
+    }
+
     &:hover{
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
         transform: translateY(-5px);

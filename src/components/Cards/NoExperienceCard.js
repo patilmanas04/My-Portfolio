@@ -1,26 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Document = styled.img`
-    display: none;
-    height: 70px;
-    width: fit-content;
-    background-color: #000;
-    border-radius: 10px;
-
-    &:hover{
-        cursor: pointer;
-        opacity: 0.8;
-    }
-`
-
 const Card = styled.div`
-    width: 650px;
+    width: fit-content;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 12px 16px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -31,14 +17,24 @@ const Card = styled.div`
         transform: translateY(-5px);
     }
 
-    &:hover ${Document} {
-        display: flex;
+    &::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #2E1D4A;
+        border-left: 0.1px solid #306ee8;
+        border-top: 0.1px solid #306ee8;
+        position: absolute;
+        z-index: 999;
+        left: 134px;
+        top: 27px;
+        transform: rotate(-45deg);
     }
 
     @media screen and (max-width: 768px){
         padding: 10px;
         gap: 8px;
-        width: 300px;
+        width: fit-content;
     }
 
     border: 0.1px solid #306ee8;
@@ -51,97 +47,7 @@ const NoExperienceText = styled.div`
     color: #ffffff;
 `
 
-const Top = styled.div`
-    display: flex;
-    gap: 12px;
-    width: 100%;
-`
-
-const Logo = styled.img`
-    width: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-
-    @media screen and (max-width: 768px){
-        height: 40px;
-    }
-`
-
-const Body = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-`
-
-const Role = styled.div`
-    font-size: 18px;
-    font-weight: 600;
-    color: ${({theme}) => theme.text_secondary + 99};
-
-    @media screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-const Company = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({theme}) => theme.text_secondary + 80};
-
-    @media screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-const Duration = styled.div`
-    font-size: 12px;
-    font-weight: 400;
-    color: ${({theme}) => theme.text_secondary + 80};
-
-    @media screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
-
-const Description = styled.div`
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({theme}) => theme.text_primary + 99};
-    margin-bottom: 10px;
-
-    @media screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-const Skills = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    margin-top: 10px;
-`
-
-const ItemWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-`
-
-const Skill = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({theme}) => theme.text_primary + 99};
-
-    @media screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-const NoExperienceCard = (props) => {
-    const {experience} = props
-
+const NoExperienceCard = () => {
     return (
         <>
         <Card>
