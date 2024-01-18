@@ -214,8 +214,8 @@ export const Projects = [
             "Bootstrap"
         ],
         category: "web app",
-        github: "https://github.com/rishavchanda/Project-Management-App",
-        webapp: "https://vexa-app.netlify.app/",
+        github: "https://github.com/patilmanas04/My-First-React-App",
+        webapp: "https://textutilsio.netlify.app/",
     },
     {
         id: 2,
