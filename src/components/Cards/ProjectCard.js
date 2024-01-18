@@ -79,7 +79,8 @@ const ActionButtons = styled.div`
     width: 100%;
     display: flex;
     gap: 0.6rem;
-    margin: 0.6rem 0;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
 `
 
 const AnchorButton = styled.a`
@@ -116,13 +117,13 @@ const ProjectCard = (props) => {
             <ActionButtons>
                 {
                     project.github &&
-                    <AnchorButton href={project.github}>
+                    <AnchorButton href={project.github} target='_blank'>
                         <FaGithub style={iconStyles}/>
                     </AnchorButton>
                 }
                 {
                     project.webapp &&
-                    <AnchorButton href={project.webapp}>
+                    <AnchorButton href={project.webapp} target='_blank'>
                         <IoGlobeOutline style={iconStyles}/>
                     </AnchorButton>
                 }
