@@ -9,7 +9,6 @@ const FooterContainer = styled.div`
     padding: 2rem 0;
     display: flex;
     justify-content: center;
-    //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
 `;
 
 
@@ -98,8 +97,8 @@ const Footer = () => {
                     <NavLink href="#education">Education</NavLink>
                 </Nav>
                 <SocialMediaIcons>
-                    <SocialMediaIcon href={Bio.linkedin}><LinkedInIcon/></SocialMediaIcon>
-                    <SocialMediaIcon href={Bio.insta}><InstagramIcon/></SocialMediaIcon>
+                    <SocialMediaIcon href={Bio.linkedin} target='_blank'><LinkedInIcon/></SocialMediaIcon>
+                    <SocialMediaIcon href={Bio.insta} target='_blank'><InstagramIcon/></SocialMediaIcon>
                 </SocialMediaIcons>
                 <Copyright>
                     &copy; 2024 Manas Patil. All rights reserved
