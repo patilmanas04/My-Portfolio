@@ -7,6 +7,20 @@ Welcome to my portfolio website! This repository contains the source code and fi
 You can access my portfolio website by clicking [here](https://pmanasportfolio.netlify.app/). Alternatively, you can copy and paste the following URL into your browser:
 https://pmanasportfolio.netlify.app/
 
+## Screenshots
+
+![Screenshot 1](screenshots/screenshot1.png)
+*About*
+
+![Screenshot 2](screenshots/screenshot2.png)
+*Skills*
+
+![Screenshot 2](screenshots/screenshot3.png)
+*Projects*
+
+![Screenshot 2](screenshots/screenshot4.png)
+*Contact*
+
 ## Technologies Used
 
 - Frontend: HTML, CSS, JavaScript, styled-components
