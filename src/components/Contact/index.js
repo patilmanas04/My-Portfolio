@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import emailjs from '@emailjs/browser'
 import { Snackbar } from '@mui/material'
+import CustomSnackbar from '../Cards/CustomSnackbar'
 
 const Container = styled.div`
     display: flex;
@@ -158,6 +159,9 @@ const Contact = () => {
                     onClose={() => setOpen(false)}
                     message="Email sent successfully!"
                     severity="success"
+                    style={{
+                        zIndex: "100"
+                    }}
                 />
             </Wrapper>
         </Container>

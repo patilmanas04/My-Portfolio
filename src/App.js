@@ -9,6 +9,7 @@ import Experience from './components/Experience';
 import ProjectsSection from './components/ProjectsSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CustomSnackbar from './components/Cards/CustomSnackbar';
 
 const Body = styled.div`
   background-color: ${({theme}) => theme.bg};
@@ -51,6 +52,7 @@ function App() {
           <Footer />
         </Body>
       </Router>
+      <CustomSnackbar />
     </ThemeProvider>
     </>
   );
