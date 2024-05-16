@@ -1,8 +1,6 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import emailjs from '@emailjs/browser'
-import { Snackbar } from '@mui/material'
-import CustomSnackbar from '../Cards/CustomSnackbar'
 
 const Container = styled.div`
     display: flex;
@@ -153,16 +151,7 @@ const Contact = () => {
                     <ContactInputMessage placeholder="Message" rows="4" name="message" required/>
                     <ContactButton type="submit" value="Send"/>
                 </ContactForm>
-                <Snackbar 
-                    open={open}
-                    autoHideDuration={6000}
-                    onClose={() => setOpen(false)}
-                    message="Email sent successfully!"
-                    severity="success"
-                    style={{
-                        zIndex: "100"
-                    }}
-                />
+                
             </Wrapper>
         </Container>
         </>

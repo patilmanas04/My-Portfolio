@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-    position: absolute;
+    position: sticky;
+    width: 300px;
     z-index: 999;
     background-color: #323232;
     border-radius: 5px;
