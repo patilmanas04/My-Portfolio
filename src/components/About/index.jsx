@@ -21,6 +21,10 @@ const AboutDescription = styled.p`
     line-height: 1.5;
     width: 100%;
     max-width: 800px;
+
+    @media (max-width: 800px) {
+        text-align: justify;
+    }
 `
 
 const AboutSection = () => {
