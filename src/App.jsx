@@ -1,51 +1,35 @@
-import './App.css';
-import styled, { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './utils/Themes.js';
-import HeroSection from './components/HeroSection/index.jsx';
-import SkillsSection from './components/SkillsSection/index.jsx';
-import ExperienceSection from './components/ExperienceSection/index.jsx';
-import ProjectsSection from './components/ProjectsSection/index.jsx';
-import ContactSection from './components/ContactSection/index.jsx';
-import FooterSection from './components/FooterSection/index.jsx';
-
-const Body = styled.div`
-	background-color: ${({theme}) => theme.bg};
-	width: 100%;
-	height: 100%;
-`
-
-const Wrapper = styled.div`
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
-	width: 100%;
-	background: linear-gradient(
-		38.73deg,
-		rgba(204, 0, 187, 0.15) 0%,
-		rgba(201, 32, 184, 0) 50%
-	),
-	linear-gradient(
-		141.27deg,
-		rgba(0, 70, 209, 0) 50%,
-		rgba(0, 70, 209, 0.15) 100%
-	);
-`
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
 function App() {
-	return (
-		<ThemeProvider theme={darkTheme}>
-			<Body>
-				<HeroSection />
-				<Wrapper>
-					<SkillsSection />
-					<ExperienceSection />
-				</Wrapper>
-				<ProjectsSection />
-				<Wrapper>
-					<ContactSection />
-				</Wrapper>
-				<FooterSection />
-			</Body>
-		</ThemeProvider>
-	);
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
 }
 
-export default App;
+export default App
