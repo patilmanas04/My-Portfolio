@@ -11,6 +11,7 @@ import LinksSection from './components/Links/index.jsx'
 import ContactSection from './components/Contact/index.jsx'
 import FooterSection from './components/Footer/index.jsx'
 import HorizontalDivider from './components/HorizontalDivider/index.jsx'
+import { useState } from 'react'
 
 const BodyWrapper = styled.div`
 	background: ${props => props.theme.background};
@@ -21,10 +22,15 @@ const BodyWrapper = styled.div`
 `
 
 function App() {
+	const [theme, setTheme] = useState('dark')
+	const toggleTheme = () => {
+		setTheme((theme=='dark')?'light':'dark')
+	}
+
 	return (
-		<ThemeProvider theme={darkTheme}>
+		<ThemeProvider theme={(theme=='dark')?darkTheme:lightTheme}>
 			<BodyWrapper>
-				<NavbarSection />
+				<NavbarSection toggleTheme={toggleTheme} theme={theme}/>
 				<HorizontalDivider />
 				<IntroductionSection />
 				<HorizontalDivider />
