@@ -12,7 +12,7 @@ const AboutWrapper = styled.section`
 `
 
 const AboutTitle = styled.p`
-    color: ${props => props.theme.AboutTitle};
+    color: ${props => props.theme.commentText};
 `
 
 const AboutDescription = styled.p`
@@ -34,7 +34,7 @@ const AboutSection = () => {
                 //about
             </AboutTitle>
             <AboutDescription>
-                {About.description1}
+                {About.description}
             </AboutDescription>
         </AboutWrapper>
     )

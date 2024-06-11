@@ -4,8 +4,7 @@ export const Introduction = {
 };
   
 export const About = {
-    description: "Web whisperer, pixel alchemist, real-world problem solver. I brew full-stack magic with HTML, CSS, JS & React, sprinkle in diverse languages, and watch your ideas bloom. Let's code your vision into vibrant reality!",
-    description1: "hi, i'm abdussamad, my friends call me sammie. i enjoy consuming, dissecting and creating experiences- that could be anything from watching Grey's anatomy, listening to Yé, discussing the concept of eternity with friends to curating and building visually stunning and performant mobile applications, websites etc.",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste modi est error labore, deleniti corporis consequatur. Eaque provident nemo alias fuga nostrum rerum ab dolor asperiores aliquam inventore laudantium, velit sapiente hic vero natus optio harum sed numquam qui corrupti, unde, eum commodi. Voluptate, minima! Quisquam, quidem. Quisquam, quidem.",
 }
 
 export const Skills = [
@@ -90,6 +89,10 @@ export const Skills = [
         logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/Android_Studio_Icon_3.6.svg"
     },
     {
+        name: "Xcode",
+        logo: "https://www.svgrepo.com/show/374194/xcode.svg"
+    },
+    {
         name: "Python",
         logo: "https://www.svgrepo.com/show/452091/python.svg"
     },
@@ -135,7 +138,7 @@ export const Experiences = [
         companyUrl: "https://kintudesigns.com/",
         startDate: "Feb 2024",
         endDate: "present",
-        description: "collaborated with design teams to implement various complex user interfaces to prioritize features for the product releases, whilst improving user engagement and retention, resulting in a 20% and 15% increase respectively.migrated endpoints architecture from monolith to microservices, improving scalability and performance developed and implemented consultations feature for Telemedicine Platform, which allow 16,000 consultations per month across Nigeria and Egypt for patients from the comfort of their homes.",
+        description: "orem ipsum dolor sit amet, consectetur adipisicing elit. At sunt, beatae sequi illum veritatis autem eos magnam quia, assumenda rerum dignissimos aspernatur quibusdam sapiente unde perspiciatis tenetur reprehenderit minus, esse sint ratione fugit recusandae cumque facilis tempora! Exercitationem fuga commodi, dolorem maiores excepturi ipsam aliquid aut, consequuntur porro soluta cupiditate nostrum itaque aspernatur praesentium iusto, quaerat nesciunt. Voluptatem, minus adipisci! Quisquam, quidem.",
         skills: ["reactjs", "fusejs", "vitejs", "tailwindcss"],
     },
 ];

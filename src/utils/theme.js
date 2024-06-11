@@ -13,7 +13,7 @@ const lightTheme = {
     horizontalDivider: '#8C8C8C',
     commentText: "#8C8C8C",
     green: "#00CE05",
-    border: "#E0E0E0"
+    border: "#c8c8c8"
 }
 
 export { darkTheme, lightTheme }
