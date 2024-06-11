@@ -34,6 +34,30 @@ export const Skills = [
         logo: ""
     },
     {
+        name: "Tailwind CSS",
+        logo: ""
+    },
+    {
+        name: "pandas",
+        logo: ""
+    },
+    {
+        name: "numpy",
+        logo: ""
+    },
+    {
+        name: "scikit-learn",
+        logo: ""
+    },
+    {
+        name: "matplotlib",
+        logo: ""
+    },
+    {
+        name: "seaborn",
+        logo: ""
+    },
+    {
         name: "Node Js",
         logo: ""
     },
