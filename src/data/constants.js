@@ -1,6 +1,6 @@
 export const Introduction = {
-    name: "Manas Sunil Patil",
-    roles: "Full Stack Developer",
+    name: "Manas Patil",
+    role: "Full Stack Developer",
 };
   
 export const About = {

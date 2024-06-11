@@ -80,7 +80,7 @@ const NavbarSection = (props) => {
         <NavbarWrapper>
             <LeftContainer>
                 <CommentText>
-                    // portfolio
+                    //portfolio
                 </CommentText>
                 <PrimaryText href='https://patilmanas.netlify.app'>
                     .manaspatil
@@ -88,7 +88,7 @@ const NavbarSection = (props) => {
             </LeftContainer>
             <RightContainer>
                 <CommentText>
-                    // theme
+                    //theme
                 </CommentText>
                 <ThemeText>
                     theme = THEMES.<ThemeToggleButton onClick={toggleTheme}>{theme}</ThemeToggleButton>

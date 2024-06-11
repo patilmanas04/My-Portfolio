@@ -11,7 +11,7 @@ const lightTheme = {
     text: '#1F1F1f',
     horizontalDivider: '#8C8C8C',
     commentText: "#8C8C8C",
-    green: "#4CE470"
+    green: "#00CE05"
 }
 
 export { darkTheme, lightTheme }
