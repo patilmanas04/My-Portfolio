@@ -11,119 +11,119 @@ export const About = {
 export const Skills = [
     {
         name: "React Js",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/452092/react.svg",
     },
     {
         name: "HTML",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/452228/html-5.svg"
     },
     {
         name: "CSS",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/452185/css-3.svg"
     },
     {
         name: "Javascript",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/373703/js.svg"
     },
     {
         name: "Bootstrap",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/303293/bootstrap-4-logo.svg"
     },
     {
         name: "Material UI",
-        logo: ""
+        logo: "https://cdn.worldvectorlogo.com/logos/material-ui-1.svg"
     },
     {
         name: "Tailwind CSS",
-        logo: ""
+        logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
     },
     {
         name: "pandas",
-        logo: ""
+        logo: "https://cdn.worldvectorlogo.com/logos/pandas.svg"
     },
     {
         name: "numpy",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/354127/numpy.svg"
     },
     {
         name: "scikit-learn",
-        logo: ""
+        logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
     },
     {
         name: "matplotlib",
-        logo: ""
+        logo: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg"
     },
     {
         name: "seaborn",
-        logo: ""
+        logo: "https://cdn.worldvectorlogo.com/logos/seaborn-1.svg"
     },
     {
         name: "Node Js",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/354119/nodejs-icon.svg"
     },
     {
         name: "Express Js",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/330398/express.svg"
     },
     {
         name: "MySQL",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/303251/mysql-logo.svg"
     },
     {
         name: "MongoDB",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/373845/mongo.svg"
     },
     {
         name: "PHP",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/354180/php.svg"
     },
     {
         name: "Java",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/452234/java.svg"
     },
     {
         name: "XML",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/375305/xml-document.svg"
     },
     {
         name: "Android Studio",
-        logo: ""
+        logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/Android_Studio_Icon_3.6.svg"
     },
     {
         name: "Python",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/452091/python.svg"
     },
     {
         name: "C",
-        logo: ""
+        logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
     },
     {
         name: "C++",
-        logo: ""
+        logo: "https://cdn.worldvectorlogo.com/logos/c.svg"
     },
     {
         name: "Git",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/452210/git.svg"
     },
     {
         name: "Github",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/475654/github-color.svg"
     },
     {
         name: "Netlify",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/376339/netlify.svg"
     },
     {
         name: "VS Code",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/374171/vscode.svg"
     },
     {
         name: "Postman",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/354202/postman-icon.svg"
     },
     {
         name: "Figma",
-        logo: ""
+        logo: "https://www.svgrepo.com/show/448222/figma.svg"
     },
 ];
   

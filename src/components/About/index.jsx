@@ -11,8 +11,8 @@ const AboutWrapper = styled.section`
     gap: 10px;
 `
 
-const CommentText = styled.p`
-    color: ${props => props.theme.commentText};
+const AboutTitle = styled.p`
+    color: ${props => props.theme.AboutTitle};
 `
 
 const AboutDescription = styled.p`
@@ -26,9 +26,9 @@ const AboutDescription = styled.p`
 const AboutSection = () => {
     return (
         <AboutWrapper>
-            <CommentText>
+            <AboutTitle>
                 //about
-            </CommentText>
+            </AboutTitle>
             <AboutDescription>
                 {About.description1}
             </AboutDescription>
