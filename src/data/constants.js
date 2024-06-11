@@ -133,9 +133,9 @@ export const Experiences = [
         role: "frontend developer intern",
         company: "Kintu Designs",
         companyUrl: "https://kintudesigns.com/",
-        startDate: "feb 2024",
+        startDate: "Feb 2024",
         endDate: "present",
-        desc: "description of the role and responsibilities",
+        description: "collaborated with design teams to implement various complex user interfaces to prioritize features for the product releases, whilst improving user engagement and retention, resulting in a 20% and 15% increase respectively.migrated endpoints architecture from monolith to microservices, improving scalability and performance developed and implemented consultations feature for Telemedicine Platform, which allow 16,000 consultations per month across Nigeria and Egypt for patients from the comfort of their homes.",
         skills: ["reactjs", "fusejs", "vitejs", "tailwindcss"],
     },
 ];
