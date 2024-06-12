@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Skills } from '../../data/constants'
 import SkillCard from '../Cards/SkillCard'
+import Reveal from '../MotionAnimations/Reveal'
 
 const SkillsWrapper = styled.section`
     width: 100%;
@@ -47,7 +48,11 @@ const SkillsSection = (props) => {
             <SkillsContainer>
                 {
                     Skills.map((skill, index) => {
-                        return <SkillCard skill={skill} key={index} theme={theme}/>
+                        return (
+                            <Reveal key={index}>
+                                <SkillCard skill={skill} theme={theme}/>
+                            </Reveal> 
+                        )
                     })
                 }
             </SkillsContainer>

@@ -10,7 +10,7 @@ const ProjectCardWrapper = styled.div`
     align-items: flex-start;
     padding: 20px;
     width: 300px;
-    height: 350px;
+    height: 500px;
     border: 1px solid ${props => props.theme.border};
     border-radius: 5px;
 
@@ -28,6 +28,16 @@ const ProjectContent = styled.div`
     gap: 10px;
 `    
 
+const ProjectImageContainer = styled.div`
+    width: 100%;
+    height: 150px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    padding: 30px 20px 0 20px;
+    overflow: hidden;
+    background-color: ${props => props.theme.imageBg};
+`
+
 const ProjectImage = styled.img`
     width: 100%;
     height: 180px;
@@ -35,6 +45,12 @@ const ProjectImage = styled.img`
     filter: grayscale(100%);
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
+    transition: all 0.3s ease-in-out;
+
+    ${ProjectCardWrapper}:hover & {
+        filter: grayscale(0%);
+        transform: rotate(3deg) scale(1.1);
+    }
 `
 
 const ProjectName = styled.p`
@@ -83,7 +99,9 @@ const ProjectCard = (props) => {
     return (
         <ProjectCardWrapper>
             <ProjectContent>
-                {/* <ProjectImage src={project.image} alt={project.name}/> */}
+                <ProjectImageContainer>
+                    <ProjectImage src={project.image} alt={project.name}/>
+                </ProjectImageContainer>
                 <ProjectName>
                     {project.title}
                 </ProjectName>

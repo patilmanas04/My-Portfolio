@@ -36,7 +36,8 @@ const LinkItem = styled.a`
         border-bottom: 15px solid transparent;
         position: absolute;
         right: -25px;        
-        top: 13px;
+        top: 50%;
+        transform: translateY(-50%);
         opacity: 0;
     }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Projects } from '../../data/constants'
 import ProjectCard from '../Cards/ProjectCard'
+import Reveal from '../MotionAnimations/Reveal'
 
 const ProjectsWrapper = styled.section`
     display: flex;
@@ -45,7 +46,11 @@ const ProjectsSection = () => {
             <ProjectsContainer>
                 {
                     Projects.map((project, index) => {
-                        return <ProjectCard project={project} key={index}/>
+                        return (
+                            <Reveal key={index}>
+                                <ProjectCard project={project} />
+                            </Reveal>
+                        )
                     })
                 }
             </ProjectsContainer>

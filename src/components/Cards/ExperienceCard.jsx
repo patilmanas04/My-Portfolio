@@ -38,10 +38,42 @@ const ExperienceContent = styled.div`
 `
 
 const CompanyDetailsWrapper = styled.a`
+    position: relative;
     text-decoration: none;
     padding: 8px;
     border: 1px solid ${props => props.theme.text};
     color: ${props => props.theme.text};
+`
+
+const CompanyUrlPopup = styled.div`
+    position: absolute;
+    padding: 10px;
+    background: ${props => props.theme.urlPopup};
+    color: ${props => props.theme.text};
+    border-radius: 5px;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+        content: '';
+        border-top: 8px solid ${props => props.theme.urlPopup};
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -7px;
+    }
+
+    ${CompanyDetailsWrapper}:hover & {
+        opacity: 1;
+        pointer-events: all;
+    }
 `
 
 const MyRoleInCompany = styled.span`
@@ -85,6 +117,9 @@ const ExperienceCard = (props) => {
             </Timeline>
             <ExperienceContent>
                 <CompanyDetailsWrapper href={props.experience.companyUrl} target='_blank'>
+                    <CompanyUrlPopup>
+                        {props.experience.companyUrl}
+                    </CompanyUrlPopup>
                     {props.experience.company}
                     <MyRoleInCompany>
                         //{props.experience.role}
