@@ -161,7 +161,7 @@ export const Projects = [
         title: "Notedash (MERN Stack)",
         description: "A comprehensive notes application with user authentication, note management features (create, edit, delete), and a user-friendly interface.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/screenshots/screenshot2.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/NotedashWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
             "ExpressJs",
@@ -178,7 +178,7 @@ export const Projects = [
         description:
         "A personal portfolio website showcasing skills, projects, experiences, and a contact form for seamless communication.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/MyPortfolioWebApplicationScreenshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/MyPortfolioWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
             "ViteJs",
@@ -194,7 +194,7 @@ export const Projects = [
         description:
         "A ReactJs application offering various text manipulation tools, including case conversion, extra space removal, capitalization, and text formatting.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/TextUtilsWebApplicationScreenshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/TextUtilsWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
             "Bootstrap"
@@ -208,7 +208,7 @@ export const Projects = [
         description:
         "A news application that displays categorized news articles, supports a dark/light theme toggle, and utilizes the News API for content retrieval.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/ExpressNewsWebApplicationScreenshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/ExpressNewsWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
             "News Api"
@@ -222,7 +222,7 @@ export const Projects = [
         description:
         " A task management tool that stores tasks in the browser's local storage, enabling efficient organization and tracking.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/ToDoListWebApplicationScreenshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/ToDoListWebApplicationScreenshot.png",
         tags: [
             "HTML",
             "CSS",
@@ -238,7 +238,7 @@ export const Projects = [
         description:
         "A mobile app that translates text between languages using Firebase API and features speech-to-text functionality for enhanced accessibility.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/LanguageTranslatorApplicationScreenshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/LanguageTranslatorApplicationScreenshot.png",
         tags: [
             "Java",
             "Firebase",
@@ -254,7 +254,7 @@ export const Projects = [
         description:
         "A responsive clone of the Unsplash website, demonstrating proficiency in web development fundamentals and API integration.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/UnsplashCloneWebApplicationScreenshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/UnsplashCloneWebApplicationScreenshot.png",
         tags: [
             "HTML",
             "CSS",
@@ -270,7 +270,7 @@ export const Projects = [
         description:
         "A visually engaging web application that replicates the Windows 11 interface, featuring a functional homepage with interactive elements.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/Windows11CloneWebApplicationScreenshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/Windows11CloneWebApplicationScreenshot.png",
         tags: [
             "HTML",
             "CSS",

@@ -40,7 +40,6 @@ const ProjectImageContainer = styled.div`
 
 const ProjectImage = styled.img`
     width: 100%;
-    height: 180px;
     object-fit: cover;
     filter: grayscale(100%);
     border-top-right-radius: 6px;
