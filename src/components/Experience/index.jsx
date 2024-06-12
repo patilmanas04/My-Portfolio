@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Experiences } from '../../data/constants'
 import ExperienceCard from '../Cards/ExperienceCard'
+import Reveal from '../MotionAnimations/Reveal'
 
 const ExperienceWrapper = styled.section`
 	width: 100%;
@@ -36,7 +37,11 @@ const ExperienceSection = () => {
 			<ExperiencesContainer>
 				{
 					Experiences.map((experience, index) => {
-						return <ExperienceCard key={index} experience={experience}/>
+						return (
+							// <Reveal key={index}>
+								<ExperienceCard experience={experience}/>
+							// </Reveal>
+						)
 					})
 				}
 			</ExperiencesContainer>

@@ -21,8 +21,12 @@ export const Skills = [
         logo: "https://www.svgrepo.com/show/452185/css-3.svg"
     },
     {
-        name: "Javascript",
+        name: "JavaScript",
         logo: "https://www.svgrepo.com/show/373703/js.svg"
+    },
+    {
+        name: "TypeScript",
+        logo: "https://www.svgrepo.com/show/374144/typescript.svg"
     },
     {
         name: "Bootstrap",
@@ -93,7 +97,11 @@ export const Skills = [
         logo: "https://www.svgrepo.com/show/374194/xcode.svg"
     },
     {
-        name: "Python",
+        name: "swift",
+        logo: "https://www.svgrepo.com/show/374112/swift.svg"
+    },
+    {
+        name: "python",
         logo: "https://www.svgrepo.com/show/452091/python.svg"
     },
     {
@@ -128,6 +136,10 @@ export const Skills = [
         name: "Figma",
         logo: "https://www.svgrepo.com/show/448222/figma.svg"
     },
+    {
+        name: "Canva",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg"
+    },
 ];
   
 export const Experiences = [
@@ -135,7 +147,7 @@ export const Experiences = [
         id: 0,
         role: "frontend developer intern",
         company: "Kintu Designs",
-        companyUrl: "https://kintudesigns.com/",
+        companyUrl: "https://kintudesigns.com",
         startDate: "Feb 2024",
         endDate: "present",
         description: "My primary responsibility is to transition a health club's SaaS website into a ReactJS platform, including the development of a comprehensive admin panel. This role allows me to apply my skills in ReactJS, improve the user experience, and contribute to the overall efficiency of the website.",
@@ -149,7 +161,7 @@ export const Projects = [
         title: "Notedash (MERN Stack)",
         description: "A comprehensive notes application with user authentication, note management features (create, edit, delete), and a user-friendly interface.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/NotedashWebApplicationScreenshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/screenshots/screenshot2.png",
         tags: [
             "ReactJs",
             "ExpressJs",

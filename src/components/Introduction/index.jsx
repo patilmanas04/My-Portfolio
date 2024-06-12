@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { Introduction } from '../../data/constants'
 
-
 const IntroductionWrapper = styled.section`
     display: flex;
     flex-direction: column;
