@@ -4,7 +4,7 @@ export const Introduction = {
 };
   
 export const About = {
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste modi est error labore, deleniti corporis consequatur. Eaque provident nemo alias fuga nostrum rerum ab dolor asperiores aliquam inventore laudantium, velit sapiente hic vero natus optio harum sed numquam qui corrupti, unde, eum commodi. Voluptate, minima! Quisquam, quidem. Quisquam, quidem.",
+    description: "Hi, I'm Manas Patil, a BTech CSE student from India. I craft innovative solutions with a focus on the MERN stack and JavaScript magic. I've also delved into Python, C, Java, and mastered algorithms and software engineering principles. Collaboration fuels my creativity, so let's team up for greatness! I'm diving into AI & ML, aiming for impactful solutions. Outside of coding, I enjoy mobile and PC gaming, Badminton, and soccer.",
 }
 
 export const Skills = [
@@ -138,7 +138,7 @@ export const Experiences = [
         companyUrl: "https://kintudesigns.com/",
         startDate: "Feb 2024",
         endDate: "present",
-        description: "orem ipsum dolor sit amet, consectetur adipisicing elit. At sunt, beatae sequi illum veritatis autem eos magnam quia, assumenda rerum dignissimos aspernatur quibusdam sapiente unde perspiciatis tenetur reprehenderit minus, esse sint ratione fugit recusandae cumque facilis tempora! Exercitationem fuga commodi, dolorem maiores excepturi ipsam aliquid aut, consequuntur porro soluta cupiditate nostrum itaque aspernatur praesentium iusto, quaerat nesciunt. Voluptatem, minus adipisci! Quisquam, quidem.",
+        description: "My primary responsibility is to transition a health club's SaaS website into a ReactJS platform, including the development of a comprehensive admin panel. This role allows me to apply my skills in ReactJS, improve the user experience, and contribute to the overall efficiency of the website.",
         skills: ["reactjs", "fusejs", "vitejs", "tailwindcss"],
     },
 ];
