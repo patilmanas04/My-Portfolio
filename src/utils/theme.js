@@ -4,16 +4,18 @@ const darkTheme = {
     horizontalDivider: '#2F2F2F',
     commentText: "#8C8C8C",
     green: "#4CE470",
-    border: "#2F2F2F"
+    border: "#2F2F2F",
+    hover: "#2E2E2E"
 }
 
 const lightTheme = {
-    background: '#FFFFFF',
+    background: '#d7d7d7',
     text: '#1F1F1f',
     horizontalDivider: '#8C8C8C',
     commentText: "#8C8C8C",
-    green: "#00CE05",
-    border: "#c8c8c8"
+    green: "#0CB010",
+    border: "#b5b4b4",
+    hover: "#C7C7C7"
 }
 
 export { darkTheme, lightTheme }

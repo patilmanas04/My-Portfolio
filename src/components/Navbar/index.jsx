@@ -55,7 +55,7 @@ const PrimaryText = styled.a`
     animation: ${fadeInOutAnimation} 1.4s ease-in-out infinite alternate-reverse;
 
     &:hover{
-        background-color: #2e2e2e;
+        background-color: ${props => props.theme.hover};
     }
 `
 
@@ -71,6 +71,10 @@ const ThemeToggleButton = styled.span`
     cursor: pointer;
     font-size: 1rem;
     animation: ${fadeInOutAnimation} 1.4s ease-in-out infinite alternate-reverse;
+
+    &:hover{
+        background-color: ${props => props.theme.hover};
+    }
 `
 
 const NavbarSection = (props) => {

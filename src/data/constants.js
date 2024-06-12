@@ -317,7 +317,7 @@ export const Projects = [
     },
 ];
 
-export const links = [
+export const Links = [
     {
         name: "resume",
         url: "https://drive.google.com/file/d/11f8_Y0FmWvEDVCteJ9mcujZZNaj0DS75/view"

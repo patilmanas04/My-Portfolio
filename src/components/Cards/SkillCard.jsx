@@ -11,6 +11,10 @@ const Card = styled.div`
     justify-content: center;
     border-radius: 10px;
     border: 1px solid ${props => props.theme.border};
+
+    &:hover{
+        background-color: ${props => props.theme.hover};
+    }
 `
 
 const Logo = styled.div`
