@@ -5,7 +5,7 @@ const Divider = styled.div`
     width: 100%;
     height: 1px;
     background-color: ${props => props.theme.horizontalDivider};
-    margin: 24px 0;
+    margin: 30px 0;
 `
 
 const HorizontalDivider = () => {

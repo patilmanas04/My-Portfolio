@@ -5,7 +5,7 @@ const FooterWrapper = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 0 0;
+    padding: 14px 0 0 0;
     width: 100%;
 `
 

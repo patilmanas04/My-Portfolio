@@ -121,7 +121,9 @@ const Button = styled.button`
     }
 `
 
-const ContactSection = () => {
+const ContactSection = (props) => {
+    const { openModule } = props
+
     const form = useRef(null)
 
     const handleSubmit = (e) => {
@@ -129,8 +131,10 @@ const ContactSection = () => {
         emailjs.sendForm('service_tqijgym', 'template_wloes9h', form.current, 'PqJx_9YaTPewypuk_')
         .then((result) => {
             form.current.reset()
+            openModule(true)
         }, (error) => {
             console.log(error.text)
+            openModule(false)
         })
     }
 

@@ -16,11 +16,13 @@ const LinksAndContactWrapper = styled.section`
     }
 `
 
-const LinksAndContactSection = () => {
+const LinksAndContactSection = (props) => {
+    const { openModule } = props
+
     return (
         <LinksAndContactWrapper>
             <LinksSection />
-            <ContactSection />
+            <ContactSection openModule={openModule}/>
         </LinksAndContactWrapper>
     )
 }

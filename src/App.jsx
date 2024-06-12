@@ -11,6 +11,7 @@ import LinksAndContactSection from './components/LinksAndContact/index.jsx'
 import FooterSection from './components/Footer/index.jsx'
 import HorizontalDivider from './components/HorizontalDivider/index.jsx'
 import { useState } from 'react'
+import MessageSentModule from './components/Cards/MessageSentModule.jsx'
 
 const BodyWrapper = styled.div`
 	background: ${props => props.theme.background};
@@ -27,13 +28,26 @@ const BodyWrapper = styled.div`
 
 function App() {
 	const [theme, setTheme] = useState('dark')
+	const [open, setOpen] = useState(false)
+	const [success, setSuccess] = useState(false)
+
 	const toggleTheme = () => {
 		setTheme((theme=='dark')?'light':'dark')
+	}
+
+	const openModule = (success) => {
+		setSuccess(success)
+		setOpen(true)
+		
+		setTimeout(() => {
+			setOpen(false)
+		}, 3000)
 	}
 
 	return (
 		<ThemeProvider theme={(theme=='dark')?darkTheme:lightTheme}>
 			<BodyWrapper>
+				<MessageSentModule open={open} success={success}/>
 				<NavbarSection toggleTheme={toggleTheme} theme={theme}/>
 				<HorizontalDivider />
 				<IntroductionSection />
@@ -46,7 +60,7 @@ function App() {
 				<HorizontalDivider />
 				<ProjectSection />
 				<HorizontalDivider />
-				<LinksAndContactSection />
+				<LinksAndContactSection openModule={openModule}/>
 				<HorizontalDivider />
 				<FooterSection />
 			</BodyWrapper>

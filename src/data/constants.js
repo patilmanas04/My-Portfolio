@@ -145,7 +145,7 @@ export const Experiences = [
   
 export const Projects = [
     {
-        id: 9,
+        id: 0,
         title: "Notedash (MERN Stack)",
         description: "A comprehensive notes application with user authentication, note management features (create, edit, delete), and a user-friendly interface.",
         image:
@@ -157,12 +157,11 @@ export const Projects = [
             "NodeJs",
             "Bootstrap"
         ],
-        category: "web app",
         github: "https://github.com/patilmanas04/Notedash",
-        webapp: null,
+        link: null,
     },
     {
-        id: 0,
+        id: 1,
         title: "My Portfolio",
         description:
         "A personal portfolio website showcasing skills, projects, experiences, and a contact form for seamless communication.",
@@ -170,15 +169,15 @@ export const Projects = [
         "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/MyPortfolioWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
+            "ViteJs",
             "EmailJs",
             "Styled Components"
         ],
-        category: "web app",
         github: "https://github.com/patilmanas04/My-Portfolio",
-        webapp: null,
+        link: "https://patilmanas.netlify.app",
     },
     {
-        id: 1,
+        id: 2,
         title: "TextUtils (ReactJs)",
         description:
         "A ReactJs application offering various text manipulation tools, including case conversion, extra space removal, capitalization, and text formatting.",
@@ -188,12 +187,11 @@ export const Projects = [
             "ReactJs",
             "Bootstrap"
         ],
-        category: "web app",
         github: "https://github.com/patilmanas04/My-First-React-App",
-        webapp: "https://textutilsio.netlify.app/",
+        link: "https://textutilsio.netlify.app/",
     },
     {
-        id: 2,
+        id: 3,
         title: "Express News (ReactJs)",
         description:
         "A news application that displays categorized news articles, supports a dark/light theme toggle, and utilizes the News API for content retrieval.",
@@ -203,12 +201,11 @@ export const Projects = [
             "ReactJs",
             "News Api"
         ],
-        category: "web app",
         github: "https://github.com/patilmanas04/News-App",
-        webapp: null
+        link: null
     },
     {
-        id: 3,
+        id: 4,
         title: "To-Do List Application (HTML, CSS, JS)",
         description:
         " A task management tool that stores tasks in the browser's local storage, enabling efficient organization and tracking.",
@@ -220,12 +217,11 @@ export const Projects = [
             "JavaScript",
             "Browser's Local Storage"
         ],
-        category: "web app",
         github: "https://github.com/patilmanas04/To-Do-List-Web-App",
-        webapp: "https://patilmanas04.github.io/To-Do-List-Web-App/",
+        link: "https://patilmanas04.github.io/To-Do-List-Web-App/",
     },
     {
-        id: 10,
+        id: 5,
         title: "Language Translation Application (Android Studio)",
         description:
         "A mobile app that translates text between languages using Firebase API and features speech-to-text functionality for enhanced accessibility.",
@@ -236,12 +232,11 @@ export const Projects = [
             "Firebase",
             "Android Studio"
         ],
-        category: "android app",
         github: "https://github.com/patilmanas04/Language-Translator-Mobile-Application",
-        webapp: null,
+        link: null,
     },
     {
-        id: 4,
+        id: 6,
         title: "Unsplash Clone",
         date: "Jul 2021",
         description:
@@ -254,12 +249,11 @@ export const Projects = [
             "JavaScript",
             "Unsplash Api"
         ],
-        category: "web app",
         github: "https://github.com/patilmanas04/Unsplash-Clone",
-        webapp: "https://patilmanas04.github.io/Unsplash-Clone/",
+        link: "https://patilmanas04.github.io/Unsplash-Clone/",
     },
     {
-        id: 5,
+        id: 7,
         title: "Windows 11 Clone (HTML, CSS, JS)",
         description:
         "A visually engaging web application that replicates the Windows 11 interface, featuring a functional homepage with interactive elements.",
@@ -270,50 +264,8 @@ export const Projects = [
             "CSS",
             "JavaScript"
         ],
-        category: "web app",
         github: "https://github.com/patilmanas04/Windows-11-Clone",
-        webapp: "https://patilmanas04.github.io/Windows-11-Clone/",
-    },
-    {
-        id: 6,
-        title: "Calculator",
-        description:
-        "A web-based calculator with fundamental arithmetic operations, designed for user-friendly calculations.",
-        image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/CalculatorWebApplicationScreenshot.png",
-        tags: ["React Js", "API", "Axios", "Node JS"],
-        category: "web app",
-        github: "https://github.com/patilmanas04/Calculator",
-        webapp: "https://patilmanas04.github.io/Calculator/",
-    },
-    {
-        id: 7,
-        title: "Alarm Clock (HTML, CSS, JS)",
-        description:
-        "A functional alarm clock application that allows users to set and manage alarms with audio notifications.",
-        image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/AlarmClockWebApplicationScreenshot.png",
-        tags: [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        category: "web app",
-        github: "https://github.com/patilmanas04/HTML-CSS-JS-Alarm-Clock",
-        webapp: "https://github.com/patilmanas04/HTML-CSS-JS-Alarm-Clock",
-    },
-    {
-        id: 8,
-        title: "Simple Clock (HTML, CSS, JS)",
-        date: "Jan 2021",
-        description:
-        "A visually appealing clock application that displays the current time and offers a customizable theme feature.",
-        image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/src/ImageSources/SimpleClockWebApplicationScreenshot.png",
-        tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-        category: "web app",
-        github: "https://github.com/patilmanas04/Simple-Clock",
-        webapp: "https://patilmanas04.github.io/Simple-Clock/",
+        link: "https://patilmanas04.github.io/Windows-11-Clone/",
     },
 ];
 
