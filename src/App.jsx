@@ -64,7 +64,7 @@ function App() {
 				<HorizontalDivider />
 				<FooterSection />
 			</BodyWrapper>
-		</ThemeProvider>	
+		</ThemeProvider>
 	)
 }
 
