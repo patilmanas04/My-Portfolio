@@ -12,7 +12,7 @@ const ProjectCardWrapper = styled.div`
     width: 300px;
     height: 350px;
     border: 1px solid ${props => props.theme.border};
-    border-radius: 10px;
+    border-radius: 5px;
 
     &:hover {
         background: ${props => props.theme.hover};
