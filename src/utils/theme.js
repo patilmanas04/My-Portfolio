@@ -14,16 +14,16 @@ const darkTheme = {
 }
 
 const lightTheme = {
-    background: '#d7d7d7',
+    background: '#ffffff',
     text: '#1F1F1f',
     horizontalDivider: '#8C8C8C',
     commentText: "#8C8C8C",
     green: "#0CB010",
-    border: "#b5b4b4",
-    hover: "#C7C7C7",
+    border: "#C8C8C8",
+    hover: "#EBEBEB",
     red: "#FF0000",
-    urlPopup: "#C7C7C7",
-    imageBg: "#232323"
+    urlPopup: "#EBEBEB",
+    imageBg: "#EDEDED"
 }
 
 export { darkTheme, lightTheme }

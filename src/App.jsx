@@ -54,7 +54,7 @@ function App() {
 				<HorizontalDivider />
 				<AboutSection />
 				<HorizontalDivider />
-				<SkillsSection theme={theme}/>
+				<SkillsSection/>
 				<HorizontalDivider />
 				<ExperienceSection />
 				<HorizontalDivider />
