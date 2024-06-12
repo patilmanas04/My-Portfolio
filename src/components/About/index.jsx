@@ -13,18 +13,14 @@ const AboutWrapper = styled.section`
 
 const AboutTitle = styled.p`
     color: ${props => props.theme.commentText};
+    font-size: 1.1rem;
 `
 
 const AboutDescription = styled.p`
     color: ${props => props.theme.text};
-    font-weight: 300;
     line-height: 1.5;
     width: 100%;
     max-width: 800px;
-
-    @media (max-width: 800px) {
-        text-align: justify;
-    }
 `
 
 const AboutSection = () => {

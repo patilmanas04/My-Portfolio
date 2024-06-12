@@ -14,6 +14,7 @@ const SkillsWrapper = styled.section`
 
 const SkillsTitle = styled.p`
     color: ${props => props.theme.commentText};
+    font-size: 1.1rem;
 `
 
 const SkillsContainer = styled.div`

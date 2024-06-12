@@ -12,6 +12,7 @@ const LinksWrapper = styled.div`
 
 const LinksTitle = styled.p`
     color: ${props => props.theme.commentText};
+    font-size: 1.1rem;
 `
 
 const LinksList = styled.div`

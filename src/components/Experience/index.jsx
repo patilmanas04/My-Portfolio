@@ -14,6 +14,7 @@ const ExperienceWrapper = styled.section`
 
 const ExperienceTitle = styled.p`
 	color: ${props => props.theme.commentText};
+    font-size: 1.1rem;
 `
 
 const ExperiencesContainer = styled.div`

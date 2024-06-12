@@ -12,6 +12,7 @@ const ContactWrapper = styled.div`
 
 const ContactTitle = styled.p`
     color: ${props => props.theme.commentText};
+    font-size: 1.1rem;
 `
 
 const ContactForm = styled.form`
@@ -151,7 +152,9 @@ const ContactSection = () => {
                 <InputContainer style={{
                     alignItems: 'flex-start'
                 }}>
-                    <InputLabel>
+                    <InputLabel style={{
+                        paddingTop: '5px'
+                    }}>
                         Message:
                     </InputLabel>
                     <TextArea placeholder='Enter your message' rows="1" name='message' required/>
