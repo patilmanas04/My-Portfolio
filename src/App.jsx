@@ -19,6 +19,10 @@ const BodyWrapper = styled.div`
 	height: 100%;
 	padding: 40px;
 	overflow-x: hidden;
+
+	@media (max-width: 768px) {
+		padding: 20px;
+	}
 `
 
 function App() {
