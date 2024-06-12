@@ -293,5 +293,13 @@ export const Links = [
     {
         name: "github",
         url: "https://github.com/patilmanas04"
-    }
+    },
+    {
+        name: "credly",
+        url: "https://www.credly.com/users/manas-patil.4387d81b/badges"
+    },
+    {
+        name: "instagram",
+        url: "https://www.instagram.com/patil_manas_04/"
+    },
 ]
