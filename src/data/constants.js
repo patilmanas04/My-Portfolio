@@ -158,7 +158,7 @@ export const Experiences = [
 export const Projects = [
     {
         id: 0,
-        title: "Notedash (MERN Stack)",
+        title: "Notedash",
         description: "A comprehensive notes application with user authentication, note management features (create, edit, delete), and a user-friendly interface.",
         image:
         "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/NotedashWebApplicationScreenshot.png",
@@ -183,42 +183,45 @@ export const Projects = [
             "ReactJs",
             "ViteJs",
             "EmailJs",
-            "Styled Components"
+            "Styled Components",
+            "Material UI",
+            "Netlify",
         ],
         github: "https://github.com/patilmanas04/My-Portfolio",
         link: "https://patilmanas.netlify.app",
     },
     {
         id: 2,
-        title: "TextUtils (ReactJs)",
+        title: "TextUtils",
         description:
         "A ReactJs application offering various text manipulation tools, including case conversion, extra space removal, capitalization, and text formatting.",
         image:
         "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/TextUtilsWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
-            "Bootstrap"
+            "Bootstrap",
+            "Netlify"
         ],
         github: "https://github.com/patilmanas04/My-First-React-App",
         link: "https://textutilsio.netlify.app/",
     },
     {
         id: 3,
-        title: "Express News (ReactJs)",
+        title: "Express News",
         description:
         "A news application that displays categorized news articles, supports a dark/light theme toggle, and utilizes the News API for content retrieval.",
         image:
         "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/ExpressNewsWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
-            "News Api"
+            "News Api",
         ],
         github: "https://github.com/patilmanas04/News-App",
         link: null
     },
     {
         id: 4,
-        title: "To-Do List Application (HTML, CSS, JS)",
+        title: "To-Do List Application",
         description:
         " A task management tool that stores tasks in the browser's local storage, enabling efficient organization and tracking.",
         image:
@@ -234,7 +237,7 @@ export const Projects = [
     },
     {
         id: 5,
-        title: "Language Translation Application (Android Studio)",
+        title: "Language Translation Android Application",
         description:
         "A mobile app that translates text between languages using Firebase API and features speech-to-text functionality for enhanced accessibility.",
         image:
@@ -242,7 +245,8 @@ export const Projects = [
         tags: [
             "Java",
             "Firebase",
-            "Android Studio"
+            "Android Studio",
+            "API Integration",
         ],
         github: "https://github.com/patilmanas04/Language-Translator-Mobile-Application",
         link: null,
@@ -259,14 +263,14 @@ export const Projects = [
             "HTML",
             "CSS",
             "JavaScript",
-            "Unsplash Api"
+            "Unsplash Api",
         ],
         github: "https://github.com/patilmanas04/Unsplash-Clone",
         link: "https://patilmanas04.github.io/Unsplash-Clone/",
     },
     {
         id: 7,
-        title: "Windows 11 Clone (HTML, CSS, JS)",
+        title: "Windows 11 Clone",
         description:
         "A visually engaging web application that replicates the Windows 11 interface, featuring a functional homepage with interactive elements.",
         image:
@@ -274,7 +278,7 @@ export const Projects = [
         tags: [
             "HTML",
             "CSS",
-            "JavaScript"
+            "JavaScript",
         ],
         github: "https://github.com/patilmanas04/Windows-11-Clone",
         link: "https://patilmanas04.github.io/Windows-11-Clone/",
