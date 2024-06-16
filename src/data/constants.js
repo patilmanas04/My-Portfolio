@@ -157,22 +157,6 @@ export const Experiences = [
   
 export const Projects = [
     {
-        id: 0,
-        title: "Notedash",
-        description: "A comprehensive notes application with user authentication, note management features (create, edit, delete), and a user-friendly interface.",
-        image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/NotedashWebApplicationScreenshot.png",
-        tags: [
-            "ReactJs",
-            "ExpressJs",
-            "MongoDB",
-            "NodeJs",
-            "Bootstrap"
-        ],
-        github: "https://github.com/patilmanas04/Notedash",
-        link: null,
-    },
-    {
         id: 1,
         title: "My Portfolio",
         description:
@@ -191,19 +175,20 @@ export const Projects = [
         link: "https://patilmanas.netlify.app",
     },
     {
-        id: 2,
-        title: "TextUtils",
-        description:
-        "A ReactJs application offering various text manipulation tools, including case conversion, extra space removal, capitalization, and text formatting.",
+        id: 0,
+        title: "Notedash",
+        description: "A comprehensive notes application with user authentication, note management features (create, edit, delete), and a user-friendly interface.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/TextUtilsWebApplicationScreenshot.png",
+        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/NotedashWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
-            "Bootstrap",
-            "Netlify"
+            "ExpressJs",
+            "MongoDB",
+            "NodeJs",
+            "Bootstrap"
         ],
-        github: "https://github.com/patilmanas04/My-First-React-App",
-        link: "https://textutilsio.netlify.app/",
+        github: "https://github.com/patilmanas04/Notedash",
+        link: null,
     },
     {
         id: 3,
@@ -218,22 +203,6 @@ export const Projects = [
         ],
         github: "https://github.com/patilmanas04/News-App",
         link: null
-    },
-    {
-        id: 4,
-        title: "To-Do List Application",
-        description:
-        " A task management tool that stores tasks in the browser's local storage, enabling efficient organization and tracking.",
-        image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/ToDoListWebApplicationScreenshot.png",
-        tags: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Browser's Local Storage"
-        ],
-        github: "https://github.com/patilmanas04/To-Do-List-Web-App",
-        link: "https://patilmanas04.github.io/To-Do-List-Web-App/",
     },
     {
         id: 5,
