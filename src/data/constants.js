@@ -157,7 +157,7 @@ export const Experiences = [
   
 export const Projects = [
     {
-        id: 1,
+        id: 0,
         title: "My Portfolio",
         description:
         "A personal portfolio website showcasing skills, projects, experiences, and a contact form for seamless communication.",
@@ -175,7 +175,24 @@ export const Projects = [
         link: "https://patilmanas.netlify.app",
     },
     {
-        id: 0,
+        id: 1,
+        title: "FlyUpload",
+        description: "Developed a MERN stack dashboard with authentication, media upload, video compression, and cloud storage using Cloudinary.",
+        image:
+        "https://raw.githubusercontent.com/patilmanas04/Fly-Upload/main/demo/dashboard.png",
+        tags: [
+            "MongoDB",
+            "ExpressJs",
+            "ReactJs",
+            "NodeJs",
+            "ViteJs",
+            "Cloudinary",
+        ],
+        github: "https://github.com/patilmanas04/Fly-Upload",
+        link: null,
+    },
+    {
+        id: 2,
         title: "Notedash",
         description: "A comprehensive notes application with user authentication, note management features (create, edit, delete), and a user-friendly interface.",
         image:
@@ -205,7 +222,7 @@ export const Projects = [
         link: null
     },
     {
-        id: 5,
+        id: 4,
         title: "Language Translation Android Application",
         description:
         "A mobile app that translates text between languages using Firebase API and features speech-to-text functionality for enhanced accessibility.",
@@ -221,7 +238,7 @@ export const Projects = [
         link: null,
     },
     {
-        id: 6,
+        id: 5,
         title: "Unsplash Clone",
         date: "Jul 2021",
         description:
@@ -238,7 +255,7 @@ export const Projects = [
         link: "https://patilmanas04.github.io/Unsplash-Clone/",
     },
     {
-        id: 7,
+        id: 6,
         title: "Windows 11 Clone",
         description:
         "A visually engaging web application that replicates the Windows 11 interface, featuring a functional homepage with interactive elements.",
@@ -257,7 +274,7 @@ export const Projects = [
 export const Links = [
     {
         name: "resume",
-        url: "https://drive.google.com/file/d/11f8_Y0FmWvEDVCteJ9mcujZZNaj0DS75/view"
+        url: "https://drive.google.com/file/d/1UXmkOiYIPwvOLqKrFzb_Rue9JPS1Q4bJ/view"
     },
     {
         name: "linkedin",
