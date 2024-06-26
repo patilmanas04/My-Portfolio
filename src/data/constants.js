@@ -274,7 +274,7 @@ export const Projects = [
 export const Links = [
     {
         name: "resume",
-        url: "https://drive.google.com/file/d/1UXmkOiYIPwvOLqKrFzb_Rue9JPS1Q4bJ/view"
+        url: "https://drive.google.com/file/d/1Ub16Nur_AcPU_3RwdpTPnDz4N1Pt6G1l/view"
     },
     {
         name: "linkedin",
