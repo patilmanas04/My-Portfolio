@@ -157,7 +157,7 @@ export const Experiences = [
         company: "Kintu Designs",
         companyUrl: "https://kintudesigns.com",
         startDate: "Feb 2024",
-        endDate: "present",
+        endDate: "July 2024",
         description: "My primary responsibility is to transition a health club's SaaS website into a ReactJS platform, including the development of a comprehensive admin panel. This role allows me to apply my skills in ReactJS, improve the user experience, and contribute to the overall efficiency of the website.",
         skills: ["reactjs", "fusejs", "vitejs", "tailwindcss"],
     },
