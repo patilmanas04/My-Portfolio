@@ -101,6 +101,14 @@ export const Skills = [
         logo: "https://www.svgrepo.com/show/374112/swift.svg"
     },
     {
+        name: "Flutter",
+        logo: "https://www.svgrepo.com/show/373604/flutter.svg"
+    },
+    {
+        name: "Dart",
+        logo: "https://www.svgrepo.com/show/353631/dart.svg"
+    },
+    {
         name: "python",
         logo: "https://www.svgrepo.com/show/452091/python.svg"
     },
