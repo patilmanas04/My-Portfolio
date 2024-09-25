@@ -282,7 +282,7 @@ export const Projects = [
 export const Links = [
     {
         name: "resume",
-        url: "https://drive.google.com/file/d/1jsYJuccZbI_Dw45KOeApfbA7L_oHEACa/view?usp=sharing"
+        url: "https://drive.google.com/file/d/1SexQkQ-riqo-uhHvne86shjcPb_KjAB6/view?usp=sharing"
     },
     {
         name: "linkedin",
