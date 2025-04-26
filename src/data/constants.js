@@ -2,7 +2,7 @@ export const Introduction = {
     name: "Manas Patil",
     role: "Full Stack Developer",
 };
-  
+
 export const About = {
     description: "Hi, I'm Manas Patil, a BTech CSE student from India. I craft innovative solutions with a focus on the MERN stack and JavaScript magic. I've also delved into Python, C, Java, and mastered algorithms and software engineering principles. Collaboration fuels my creativity, so let's team up for greatness! I'm diving into AI & ML, aiming for impactful solutions. Outside of coding, I enjoy mobile and PC gaming, Badminton, and soccer.",
 }
@@ -146,13 +146,27 @@ export const Skills = [
     },
     {
         name: "Canva",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg"
+        logo: "https://upload.wikimedia.org/wikipedia/en/b/bb/Canva_Logo.svg"
+    },
+    {
+        name: "Firebase",
+        logo: "https://www.svgrepo.com/show/353735/firebase.svg"
     },
 ];
-  
+
 export const Experiences = [
     {
         id: 0,
+        role: "full stack developer",
+        company: "Johari Career Consultancy ",
+        companyUrl: "https://joharicareerconsultancy.com",
+        startDate: "Oct 2024",
+        endDate: "Jan 2025",
+        description: "During this internship I build a landing page for the Career Consultancy Firm which shows their services with a contact form where customers can contact or schedule a call with the consultancy firm easily and seamlessly.",
+        skills: ["reactjs", "mongodb", "vitejs", "emailjs", "expressjs", "nodejs", "jwt", "cors"],
+    },
+    {
+        id: 1,
         role: "frontend developer intern",
         company: "Kintu Designs",
         companyUrl: "https://kintudesigns.com",
@@ -162,15 +176,15 @@ export const Experiences = [
         skills: ["reactjs", "fusejs", "vitejs", "tailwindcss"],
     },
 ];
-  
+
 export const Projects = [
     {
         id: 0,
         title: "My Portfolio",
         description:
-        "A personal portfolio website showcasing skills, projects, experiences, and a contact form for seamless communication.",
+            "A personal portfolio website showcasing skills, projects, experiences, and a contact form for seamless communication.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/MyPortfolioWebApplicationScreenshot.png",
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/MyPortfolioWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
             "ViteJs",
@@ -187,7 +201,7 @@ export const Projects = [
         title: "FlyUpload",
         description: "Developed a MERN stack dashboard with authentication, media upload, video compression, and cloud storage using Cloudinary.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/Fly-Upload/main/demo/dashboard.png",
+            "https://raw.githubusercontent.com/patilmanas04/Fly-Upload/main/demo/dashboard.png",
         tags: [
             "MongoDB",
             "ExpressJs",
@@ -204,7 +218,7 @@ export const Projects = [
         title: "Notedash",
         description: "A comprehensive notes application with user authentication, note management features (create, edit, delete), and a user-friendly interface.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/NotedashWebApplicationScreenshot.png",
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/NotedashWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
             "ExpressJs",
@@ -219,9 +233,9 @@ export const Projects = [
         id: 3,
         title: "Express News",
         description:
-        "A news application that displays categorized news articles, supports a dark/light theme toggle, and utilizes the News API for content retrieval.",
+            "A news application that displays categorized news articles, supports a dark/light theme toggle, and utilizes the News API for content retrieval.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/ExpressNewsWebApplicationScreenshot.png",
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/ExpressNewsWebApplicationScreenshot.png",
         tags: [
             "ReactJs",
             "News Api",
@@ -233,9 +247,9 @@ export const Projects = [
         id: 4,
         title: "Language Translation Android Application",
         description:
-        "A mobile app that translates text between languages using Firebase API and features speech-to-text functionality for enhanced accessibility.",
+            "A mobile app that translates text between languages using Firebase API and features speech-to-text functionality for enhanced accessibility.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/LanguageTranslatorApplicationScreenshot.png",
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/LanguageTranslatorApplicationScreenshot.png",
         tags: [
             "Java",
             "Firebase",
@@ -250,9 +264,9 @@ export const Projects = [
         title: "Unsplash Clone",
         date: "Jul 2021",
         description:
-        "A responsive clone of the Unsplash website, demonstrating proficiency in web development fundamentals and API integration.",
+            "A responsive clone of the Unsplash website, demonstrating proficiency in web development fundamentals and API integration.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/UnsplashCloneWebApplicationScreenshot.png",
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/UnsplashCloneWebApplicationScreenshot.png",
         tags: [
             "HTML",
             "CSS",
@@ -266,9 +280,9 @@ export const Projects = [
         id: 6,
         title: "Windows 11 Clone",
         description:
-        "A visually engaging web application that replicates the Windows 11 interface, featuring a functional homepage with interactive elements.",
+            "A visually engaging web application that replicates the Windows 11 interface, featuring a functional homepage with interactive elements.",
         image:
-        "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/Windows11CloneWebApplicationScreenshot.png",
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/Windows11CloneWebApplicationScreenshot.png",
         tags: [
             "HTML",
             "CSS",
@@ -277,12 +291,45 @@ export const Projects = [
         github: "https://github.com/patilmanas04/Windows-11-Clone",
         link: "https://patilmanas04.github.io/Windows-11-Clone/",
     },
+    {
+        id: 7,
+        title: "ClassMantra",
+        description:
+            "We built a solution — an AI-powered teacher assistant — with passion, late nights, and unstoppable teamwork.",
+        image:
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/ClassMantraWebApplicationScreenshot.png",
+        tags: [
+            "ReactJs",
+            "Firebase",
+            "Cloudinary",
+            "Gemini Api"
+        ],
+        github: "https://github.com/patilmanas04/GDG-Hack2skill-The-Genesis-Group",
+        link: "https://classmantra.netlify.app/",
+    },
+    {
+        id: 8,
+        title: "Landing Page of JCC",
+        description:
+            "Made a landing page for the Career Consultancy Firm which shows their services with a contact form where customers can contact or schedule a call with the consultancy firm easily and seamlessly.",
+        image:
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/JCCWebApplicationScreenshot.png",
+        tags: [
+            "ReactJs",
+            "MongoDB",
+            "ExpressJs",
+            "NodeJs",
+            "EmailJs"
+        ],
+        github: "https://github.com/patilmanas04/JCC-Website",
+        link: "https://joharicareerconsultancy.com/",
+    },
 ];
 
 export const Links = [
     {
         name: "resume",
-        url: "https://drive.google.com/file/d/1SexQkQ-riqo-uhHvne86shjcPb_KjAB6/view?usp=sharing"
+        url: "https://drive.google.com/file/d/1M4I0xofwmJAC-m4xbxWq9pZnmhSnkCyg/view?usp=sharing"
     },
     {
         name: "linkedin",
