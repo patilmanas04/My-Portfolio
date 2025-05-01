@@ -341,7 +341,7 @@ export const Links = [
     },
     {
         name: "credly",
-        url: "https://www.credly.com/users/manas-patil.4387d81b/badges"
+        url: "https://www.credly.com/users/patilmanas04"
     },
     {
         name: "instagram",
