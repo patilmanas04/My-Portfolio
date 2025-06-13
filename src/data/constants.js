@@ -1,6 +1,6 @@
 export const Introduction = {
     name: "Manas Patil",
-    role: "Full Stack Developer",
+    role: "Full Stack Developer | ML Explorer | ACM Chairperson @ AMTICS",
 };
 
 export const About = {
@@ -347,4 +347,8 @@ export const Links = [
         name: "instagram",
         url: "https://www.instagram.com/patil_manas_04/"
     },
+    {
+        name: "dev community",
+        url: "https://dev.to/patilmanas"
+    }
 ]
