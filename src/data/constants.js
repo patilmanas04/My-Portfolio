@@ -86,7 +86,7 @@ export const Skills = [
     },
     {
         name: "XML",
-        logo: "https://www.svgrepo.com/show/375305/xml-document.svg"
+        logo: "https://www.svgrepo.com/show/56785/xml.svg"
     },
     {
         name: "Android Studio",
@@ -157,6 +157,16 @@ export const Skills = [
 export const Experiences = [
     {
         id: 0,
+        role: "AI Intern",
+        company: "SiyaraTech Innovations LLP",
+        companyUrl: "https://siyaratechin.com/",
+        startDate: "Sep 2025",
+        endDate: "Present",
+        description: "As an AI Intern on the product team at SiyaraTech Innovations, I build and integrate AI-powered applications, leveraging Large Language Models (LLMs) to develop innovative features for our core products.",
+        skills: ["reactjs", "mongodb", "LLM", "AI", "ML", "expressjs", "nodejs", "jwt", "cors"],
+    },
+    {
+        id: 0,
         role: "full stack developer",
         company: "Johari Career Consultancy ",
         companyUrl: "https://joharicareerconsultancy.com",
@@ -180,24 +190,55 @@ export const Experiences = [
 export const Projects = [
     {
         id: 0,
-        title: "My Portfolio",
+        title: "SIH 25 Internal Hackathon Team Registration Portal",
         description:
-            "A personal portfolio website showcasing skills, projects, experiences, and a contact form for seamless communication.",
+            "A full-stack MERN portal for hackathon registration, feedback via QR codes, and a comprehensive admin dashboard.",
         image:
-            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/MyPortfolioWebApplicationScreenshot.png",
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/SIH25RegistrationPortalScreenshot.png",
         tags: [
             "ReactJs",
-            "ViteJs",
-            "EmailJs",
-            "Styled Components",
-            "Material UI",
-            "Netlify",
+            "NodeMailer",
+            "Tailwind",
+            "Express Js",
+            "MongoDB",
         ],
-        github: "https://github.com/patilmanas04/My-Portfolio",
-        link: "https://patilmanas.netlify.app",
+        link: "https://sih25-team-registration.netlify.app/",
     },
     {
         id: 1,
+        title: "ClassMantra",
+        description:
+            "We built a solution — an AI-powered teacher assistant — with passion, late nights, and unstoppable teamwork.",
+        image:
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/ClassMantraWebApplicationScreenshot.png",
+        tags: [
+            "ReactJs",
+            "Firebase",
+            "Cloudinary",
+            "Gemini Api"
+        ],
+        github: "https://github.com/patilmanas04/GDG-Hack2skill-The-Genesis-Group",
+        link: "https://classmantra.netlify.app/",
+    },
+    {
+        id: 2,
+        title: "Landing Page of JCC",
+        description:
+            "Made a website for the Career Consultancy Firm which shows their services with a contact form where customers can contact or schedule a call with the consultancy firm.",
+        image:
+            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/JCCWebApplicationScreenshot.png",
+        tags: [
+            "ReactJs",
+            "MongoDB",
+            "ExpressJs",
+            "NodeJs",
+            "EmailJs"
+        ],
+        github: "https://github.com/patilmanas04/JCC-Website",
+        link: "https://joharicareerconsultancy.com/",
+    },
+    {
+        id: 3,
         title: "FlyUpload",
         description: "Developed a MERN stack dashboard with authentication, media upload, video compression, and cloud storage using Cloudinary.",
         image:
@@ -214,23 +255,7 @@ export const Projects = [
         link: null,
     },
     {
-        id: 2,
-        title: "Notedash",
-        description: "A comprehensive notes application with user authentication, note management features (create, edit, delete), and a user-friendly interface.",
-        image:
-            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/NotedashWebApplicationScreenshot.png",
-        tags: [
-            "ReactJs",
-            "ExpressJs",
-            "MongoDB",
-            "NodeJs",
-            "Bootstrap"
-        ],
-        github: "https://github.com/patilmanas04/Notedash",
-        link: null,
-    },
-    {
-        id: 3,
+        id: 4,
         title: "Express News",
         description:
             "A news application that displays categorized news articles, supports a dark/light theme toggle, and utilizes the News API for content retrieval.",
@@ -244,7 +269,7 @@ export const Projects = [
         link: null
     },
     {
-        id: 4,
+        id: 5,
         title: "Language Translation Android Application",
         description:
             "A mobile app that translates text between languages using Firebase API and features speech-to-text functionality for enhanced accessibility.",
@@ -260,7 +285,7 @@ export const Projects = [
         link: null,
     },
     {
-        id: 5,
+        id: 6,
         title: "Unsplash Clone",
         date: "Jul 2021",
         description:
@@ -277,7 +302,7 @@ export const Projects = [
         link: "https://patilmanas04.github.io/Unsplash-Clone/",
     },
     {
-        id: 6,
+        id: 7,
         title: "Windows 11 Clone",
         description:
             "A visually engaging web application that replicates the Windows 11 interface, featuring a functional homepage with interactive elements.",
@@ -290,39 +315,6 @@ export const Projects = [
         ],
         github: "https://github.com/patilmanas04/Windows-11-Clone",
         link: "https://patilmanas04.github.io/Windows-11-Clone/",
-    },
-    {
-        id: 7,
-        title: "ClassMantra",
-        description:
-            "We built a solution — an AI-powered teacher assistant — with passion, late nights, and unstoppable teamwork.",
-        image:
-            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/ClassMantraWebApplicationScreenshot.png",
-        tags: [
-            "ReactJs",
-            "Firebase",
-            "Cloudinary",
-            "Gemini Api"
-        ],
-        github: "https://github.com/patilmanas04/GDG-Hack2skill-The-Genesis-Group",
-        link: "https://classmantra.netlify.app/",
-    },
-    {
-        id: 8,
-        title: "Landing Page of JCC",
-        description:
-            "Made a landing page for the Career Consultancy Firm which shows their services with a contact form where customers can contact or schedule a call with the consultancy firm easily and seamlessly.",
-        image:
-            "https://raw.githubusercontent.com/patilmanas04/My-Portfolio/main/image_sources/JCCWebApplicationScreenshot.png",
-        tags: [
-            "ReactJs",
-            "MongoDB",
-            "ExpressJs",
-            "NodeJs",
-            "EmailJs"
-        ],
-        github: "https://github.com/patilmanas04/JCC-Website",
-        link: "https://joharicareerconsultancy.com/",
     },
 ];
 
