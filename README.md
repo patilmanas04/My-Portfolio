@@ -1,53 +1,36 @@
-# Manas Patil's Portfolio Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Welcome to my portfolio website! This repository contains the source code and files for my portfolio website, showcasing my skills and projects as a 2nd year BTech CSE student in Surat, Gujarat, India.
+## Getting Started
 
-## Accessing the Portfolio Website
+First, run the development server:
 
-You can access my portfolio website by clicking [here](https://patilmanas.netlify.app/). Alternatively, you can copy and paste the following URL into your browser:
-https://patilmanas.netlify.app/
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Screenshots
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-![Screenshot 1](screenshots/screenshot1.png)
-*About*
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-![Screenshot 2](screenshots/screenshot2.png)
-*Skills*
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-![Screenshot 3](screenshots/screenshot3.png)
-*Experience*
+## Learn More
 
-![Screenshot 4](screenshots/screenshot4.png)
-*Projects*
+To learn more about Next.js, take a look at the following resources:
 
-![Screenshot 5](screenshots/screenshot5.png)
-*Contact*
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Technologies Used
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- Frontend: HTML, CSS, JavaScript, styled-components
-- Frameworks/Libraries: React.js, Vite.js
-- Hosting: Netlify
+## Deploy on Vercel
 
-## Features
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- **Responsive Design**: The website is fully responsive and optimized for various screen sizes, including desktops, laptops, tablets, and smartphones.
-- **Interactive Elements**: The website includes interactive elements such as buttons, links, and animations to enhance the user experience.
-- **Project Showcase**: The Projects section displays information about my projects, including the title, description, technologies used, and links to the live demo and source code.
-- **Experience Section**: The Experience section highlights my work experience.
-- **Skills Section**: The Skills section highlights my technical skills and proficiencies using icons and progress bars.
-- **Contact Form**: The Contact section includes a contact form that allows users to send messages directly to my email address.
-
-## Contributing
-
-If you have suggestions or improvements for my portfolio website, feel free to open an issue or submit a pull request. Your feedback is valuable to me!
-
-## Contact Information
-
-- Email: pmanas13092004@gmail.com
-- LinkedIn: [Manas Patil](https://www.linkedin.com/in/manas-patil-876718250/)
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
