@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import NeoCard from "@/components/ui/NeoCard";
 import data from "@/data/data.json";
+
+export const metadata: Metadata = {
+  title: "Community",
+};
 
 export default function CommunityPage() {
   const { community } = data;

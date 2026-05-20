@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import data from "@/data/data.json";
 import NeoButton from "@/components/ui/NeoButton";
 import NeoCard from "@/components/ui/NeoCard";
 import { GithubMark } from "@/components/ui/SocialLinks";
 import { Globe } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Work",
+};
 
 export default function WorkPage() {
   const { work } = data;

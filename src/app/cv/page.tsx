@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import NeoButton from "@/components/ui/NeoButton";
 import SocialLinks from "@/components/ui/SocialLinks";
 import data from "@/data/data.json";
+
+export const metadata: Metadata = {
+  title: "CV",
+};
 
 function getDrivePreviewUrl(url: string) {
   return url.replace("/view", "/preview").replace(/\?.*$/, "");

@@ -1,8 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
+import type { Metadata } from "next";
 import NeoButton from "@/components/ui/NeoButton";
 import Link from "next/link";
 import NeoCard from "@/components/ui/NeoCard";
 import data from "@/data/data.json";
+
+export const metadata: Metadata = {
+  title: "Articles",
+};
 
 export default function ArticlesPage() {
   const { articles } = data;

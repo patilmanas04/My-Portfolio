@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import data from "@/data/data.json";
 import NeoButton from "@/components/ui/NeoButton";
@@ -8,6 +9,19 @@ export function generateStaticParams() {
   return data.articles.map((article) => ({
     slug: article.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const article = data.articles.find((art) => art.slug === slug);
+
+  return {
+    title: article?.title ?? "Article",
+  };
 }
 
 export default async function ArticleDynamicPage({ params }: { params: Promise<{ slug: string }> }) {

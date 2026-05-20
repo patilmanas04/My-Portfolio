@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import NeoCard from "@/components/ui/NeoCard";
 import data from "@/data/data.json";
+
+export const metadata: Metadata = {
+  title: "Research",
+};
 
 export default function ResearchPage() {
   const { research } = data;
