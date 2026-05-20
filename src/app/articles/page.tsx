@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import NeoButton from "@/components/ui/NeoButton";
+import Link from "next/link";
 import NeoCard from "@/components/ui/NeoCard";
 import data from "@/data/data.json";
 
@@ -19,23 +20,26 @@ export default function ArticlesPage() {
 
       <section className="grid grid-cols-1 gap-6 lg:grid-cols-2 2xl:grid-cols-3">
         {articles.map((article, index) => {
-          const cardTone =
-            index % 3 === 0 ? "bg-white" : index % 3 === 1 ? "bg-accent" : "bg-primary";
+          const isEvenCard = index % 2 === 0;
+          const cardTone = isEvenCard ? "bg-white" : "bg-teal-50";
+          const tagTone = isEvenCard ? "bg-teal-50" : "bg-white";
 
           return (
             <NeoCard
               key={article.id}
-              className={`${cardTone} flex min-h-full flex-col overflow-hidden p-0`}
+              className={`${cardTone} flex min-h-full flex-col overflow-hidden p-0 text-black`}
             >
               {article.thumbnail ? (
                 <img
                   src={article.thumbnail}
                   alt=""
-                  className="h-52 w-full border-b-4 border-black object-cover"
+                  className="w-full aspect-[1000/420] border-b-4 border-black object-cover"
                 />
               ) : (
-                <div className="flex h-52 w-full items-center justify-center border-b-4 border-black bg-secondary">
-                  <span className="border-2 border-black bg-background px-3 py-2 text-xs font-black uppercase tracking-widest">
+                <div className={`${cardTone} flex h-52 w-full items-center justify-center border-b-4 border-black`}>
+                  <span
+                    className={`${tagTone} border-2 border-black px-3 py-2 text-xs font-black uppercase tracking-widest text-black`}
+                  >
                     No thumbnail
                   </span>
                 </div>
@@ -43,22 +47,34 @@ export default function ArticlesPage() {
 
               <div className="flex flex-1 flex-col gap-4 p-4">
                 <div>
-                  <p className="font-mono text-xs font-black uppercase tracking-widest">
+                  <p
+                    className={`${tagTone} inline-block border-2 border-black px-2 py-1 font-mono text-xs font-black uppercase tracking-widest text-black`}
+                  >
                     {article.date}
                   </p>
-                  <h2 className="mt-3 text-xl font-black uppercase leading-tight">
+                  <h2 className="mt-3 text-xl font-black uppercase leading-tight text-black">
                     {article.title}
                   </h2>
+                  {article.tags && article.tags.length > 0 && (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {article.tags.map((tag: string) => (
+                        <span
+                          key={tag}
+                          className={`${tagTone} border-2 border-black px-2 py-1 text-xs font-black uppercase tracking-wider text-black`}
+                        >
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
-                <a
-                  href={article.link}
-                  target="_blank"
-                  rel="noreferrer"
+                <Link
+                  href={`/articles/${article.slug}`}
                   className="mt-auto w-fit"
                 >
-                  <NeoButton hoverTone="secondary">Read on Dev.to</NeoButton>
-                </a>
+                  <NeoButton hoverTone="secondary">Read Article</NeoButton>
+                </Link>
               </div>
             </NeoCard>
           );

@@ -1,6 +1,8 @@
 import data from "@/data/data.json";
 import NeoButton from "@/components/ui/NeoButton";
 import NeoCard from "@/components/ui/NeoCard";
+import { GithubMark } from "@/components/ui/SocialLinks";
+import { Globe } from "lucide-react";
 
 export default function WorkPage() {
   const { work } = data;
@@ -20,19 +22,25 @@ export default function WorkPage() {
         {work.map((project, index) => {
           const githubLink = project.links.github;
           const liveLink = project.links.live;
-          const cardTone =
-            index % 3 === 0 ? "bg-white" : index % 3 === 1 ? "bg-accent" : "bg-secondary";
+          const isEvenCard = index % 2 === 0;
+          const cardTone = isEvenCard ? "bg-white" : "bg-teal-50";
+          const tagTone = isEvenCard ? "bg-teal-50" : "bg-white";
 
           return (
-            <NeoCard key={project.id} className={`${cardTone} flex min-h-full flex-col gap-4`}>
+            <NeoCard
+              key={project.id}
+              className={`${cardTone} flex min-h-full flex-col gap-4 text-black`}
+            >
               <div>
-                <span className="inline-block border-2 border-black bg-primary px-2 py-1 text-xs font-black uppercase tracking-wide">
+                <span
+                  className={`${tagTone} inline-block border-2 border-black px-2 py-1 text-xs font-black uppercase tracking-wide text-black`}
+                >
                   {project.type}
                 </span>
-                <h2 className="mt-3 text-xl font-black uppercase leading-tight">
+                <h2 className="mt-3 text-xl font-black uppercase leading-tight text-black">
                   {project.title}
                 </h2>
-                <p className="mt-3 text-sm font-bold leading-relaxed">
+                <p className="mt-3 text-sm font-bold leading-relaxed text-black">
                   {project.description}
                 </p>
               </div>
@@ -42,7 +50,7 @@ export default function WorkPage() {
                   {project.techStack.map((tech) => (
                     <span
                       key={tech}
-                      className="inline-block border-2 border-black bg-background px-2 py-1 text-xs font-black uppercase"
+                      className={`${tagTone} inline-block border-2 border-black px-2 py-1 text-xs font-black uppercase text-black`}
                     >
                       {tech}
                     </span>
@@ -50,23 +58,43 @@ export default function WorkPage() {
                 </div>
 
                 <div className="flex flex-wrap gap-3">
-                  {githubLink ? (
-                    <a href={githubLink} target="_blank" rel="noreferrer">
-                      <NeoButton hoverTone="primary">Github</NeoButton>
-                    </a>
-                  ) : (
-                    <NeoButton disabled hoverTone="primary">
-                      Github
+                  {githubLink && githubLink.length > 0 && (
+                    <NeoButton
+                      as="a"
+                      href={githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      hoverTone="primary"
+                      aria-label={`${project.title} GitHub repository`}
+                      title={`${project.title} GitHub repository`}
+                      className="h-11 w-11 px-0 py-0"
+                    >
+                      <GithubMark
+                        className="block h-7 w-7 shrink-0"
+                        width={28}
+                        height={28}
+                        aria-hidden="true"
+                      />
                     </NeoButton>
                   )}
 
-                  {liveLink ? (
-                    <a href={liveLink} target="_blank" rel="noreferrer">
-                      <NeoButton hoverTone="accent">Live</NeoButton>
-                    </a>
-                  ) : (
-                    <NeoButton disabled hoverTone="accent">
-                      Live
+                  {liveLink && liveLink.length > 0 && (
+                    <NeoButton
+                      as="a"
+                      href={liveLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      hoverTone="accent"
+                      aria-label={`${project.title} live site`}
+                      title={`${project.title} live site`}
+                      className="h-11 w-11 px-0 py-0"
+                    >
+                      <Globe
+                        className="block h-7 w-7 shrink-0"
+                        size={28}
+                        strokeWidth={2}
+                        aria-hidden="true"
+                      />
                     </NeoButton>
                   )}
                 </div>

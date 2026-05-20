@@ -1,4 +1,5 @@
 import NeoButton from "@/components/ui/NeoButton";
+import SocialLinks from "@/components/ui/SocialLinks";
 import data from "@/data/data.json";
 
 function getDrivePreviewUrl(url: string) {
@@ -20,22 +21,25 @@ export default function CvPage() {
         </h1>
       </header>
 
-      <NeoButton
-        as="a"
-        href={links.resume}
-        target="_blank"
-        rel="noreferrer"
-        hoverTone="accent"
-        className="w-fit bg-secondary px-5 py-3 text-sm md:text-base"
-      >
-        Download Resume
-      </NeoButton>
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <NeoButton
+          as="a"
+          href={links.resume}
+          target="_blank"
+          rel="noreferrer"
+          hoverTone="accent"
+          className="w-fit bg-secondary px-5 py-3 text-sm md:text-base"
+        >
+          Download Resume
+        </NeoButton>
+        <SocialLinks />
+      </div>
 
       <section className="border-4 border-black bg-white shadow-neo-shadow">
         <iframe
           src={resumePreviewUrl}
           title="Resume preview"
-          className="h-[800px] w-full"
+          className="h-[540px] w-full md:h-[800px]"
         />
       </section>
     </div>

@@ -40,6 +40,25 @@ export default function CommunityPage() {
               </p>
             </div>
 
+            {/* Images Array */}
+            {item.images && item.images.some((url: string) => url) && (
+              <div className="mt-6 flex flex-wrap items-start gap-4 md:gap-6">
+                {item.images.map((imgUrl: string, imgIdx: number) => {
+                  if (!imgUrl) return null;
+                  return (
+                    <div key={imgIdx} className="shrink-0 max-w-full">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={imgUrl}
+                        alt={`${item.role} related image`}
+                        className="max-h-48 md:max-h-64 w-auto h-auto max-w-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
             <p className="mt-5 border-t-2 border-black pt-4 text-sm font-bold leading-relaxed md:text-base">
               {item.description}
             </p>
