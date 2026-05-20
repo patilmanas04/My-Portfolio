@@ -1,0 +1,332 @@
+{
+  "profile": {
+    "name": "Manas Sunil Patil",
+    "tagline": "Performance-driven AI Engineer & Full-Stack Developer",
+    "location": "Bardoli, Gujarat, India",
+    "about": "Highly skilled in training machine learning models, developing Voice AI engines, and constructing RAG pipelines. Expertise in deploying real-world AI solutions seamlessly integrated with scalable full-stack web architectures using React.js, Node.js, and MongoDB.",
+    "email": "pmanas13092004@gmail.com"
+  },
+  "experience": [
+    {
+      "id": "exp_1",
+      "role": "AI Intern",
+      "company": "SiyaraTech Innovations LLP",
+      "timeline": "Sep 2025 - Feb 2026",
+      "highlights": [
+        "Architected a real-time AI Calling System utilizing LiveKit and LLMs to enable low latency voice interactions.",
+        "Built a RAG-powered WhatsApp E-commerce chatbot by integrating vector databases and generative AI.",
+        "Managed the end-to-end ML pipeline, handling data preprocessing, feature engineering, and deploying ML models."
+      ],
+      "techStack": ["LiveKit", "LLMs", "RAG", "Vector Databases", "Python"]
+    },
+    {
+      "id": "exp_2",
+      "role": "Full Stack Developer",
+      "company": "Johari Career Consultancy",
+      "timeline": "Oct 2024 - Jan 2025",
+      "highlights": [
+        "Developed and deployed a responsive web application using React.js, Node.js, and HTML/CSS.",
+        "Programmed backend integrations for real-time form submissions and automated call scheduling."
+      ],
+      "techStack": ["React.js", "Node.js", "HTML", "CSS"]
+    }
+  ],
+  "work": [
+    {
+      "id": "proj_1",
+      "title": "Sub-Millisecond Voice Activity Detection (VAD) with Custom Wakeword",
+      "type": "Project",
+      "description": "A lightweight, edge-optimized Voice Activity Detection and custom wakeword recognition engine built from scratch in PyTorch. Features a Broadcasted Residual Network (BC-ResNet) capable of sub-millisecond inference and utilizes custom Focal Loss to handle massive dataset imbalances.",
+      "techStack": [
+        "PyTorch",
+        "scikit-learn",
+        "sounddevice",
+        "edge-tts",
+        "librosa",
+        "NumPy"
+      ],
+      "links": {
+        "github": "https://github.com/patilmanas04/Sub-Millisecond-Voice-Activity-Detection-VAD-with-Custom-Wakeword",
+        "live": ""
+      }
+    },
+    {
+      "id": "proj_2",
+      "title": "Artificial Neural Networks from Scratch",
+      "type": "Project",
+      "description": "Engineered a complete Artificial Neural Network from scratch using pure mathematics and NumPy. Implemented core components including Dense Layers, Backpropagation, Binary Cross Entropy Loss, Softmax activation, and the ADAM optimizer without relying on high-level deep learning frameworks.",
+      "techStack": ["NumPy"],
+      "links": {
+        "github": "https://github.com/patilmanas04/Neural-Networks-from-Scratch",
+        "live": ""
+      }
+    },
+    {
+      "id": "proj_3",
+      "title": "Real-Time AI Calling System",
+      "type": "Industry Project",
+      "description": "Architected a low-latency AI calling system enabling seamless voice interactions. Developed during my AI Internship at SiyaraTech Innovations. (Note: As this is a proprietary company project, the source code is not publicly available).",
+      "techStack": ["LiveKit", "Frappe Framework", "Python", "Twilio"],
+      "links": { "github": "", "live": "" }
+    },
+    {
+      "id": "proj_4",
+      "title": "Full-Stack RAG Chatbot Engine",
+      "type": "Project",
+      "description": "Architected an asynchronous, multi-modal ingestion pipeline that processes complex PDFs and generates accurate AI responses backed by precise, verifiable document citations.",
+      "techStack": [
+        "React.js",
+        "FastAPI",
+        "TiDB",
+        "Redis/RQ",
+        "LangChain",
+        "ChromaDB"
+      ],
+      "links": {
+        "github": "https://github.com/patilmanas04/RAG-Chatbot-Engine",
+        "live": ""
+      }
+    },
+    {
+      "id": "proj_5",
+      "title": "RAG-Powered WhatsApp E-Commerce Bot",
+      "type": "Industry Project",
+      "description": "Built a generative AI chatbot for WhatsApp to automate customer queries and facilitate e-commerce flows. Developed during my AI Internship at SiyaraTech Innovations. (Note: As this is a proprietary company project, the source code is not publicly available).",
+      "techStack": ["Twilio", "Express.js", "MongoDB", "Gemini API"],
+      "links": { "github": "", "live": "" }
+    },
+    {
+      "id": "proj_6",
+      "title": "Hibiscus CNN Classifier",
+      "type": "Project",
+      "description": "A deep learning-based Convolutional Neural Network (CNN) model for classifying Hibiscus leaf species (Rosa-Senis, Canabinus, Mutabilis) using image data. Trained on 5,100 samples using morphological features like petal length, color, and sepal length.",
+      "techStack": ["NumPy", "TensorFlow", "Matplotlib"],
+      "links": {
+        "github": "https://github.com/patilmanas04/Hibiscus-CNN-Classifier",
+        "live": ""
+      }
+    },
+    {
+      "id": "proj_7",
+      "title": "ANN for MNIST Dataset from Scratch",
+      "type": "Project",
+      "description": "Built a custom Artificial Neural Network from the ground up using pure NumPy to classify the MNIST handwritten digit dataset, implementing mathematical foundations for forward passes, backpropagation, and optimization.",
+      "techStack": ["NumPy"],
+      "links": {
+        "github": "https://github.com/patilmanas04/MNIST-dataset-neural-network-from-scratch",
+        "live": ""
+      }
+    },
+    {
+      "id": "proj_8",
+      "title": "ClassMantra AI Educator Assistant",
+      "type": "Project",
+      "description": "Developed a full-stack educational web application featuring automated assignment grading and AI-generated feedback mechanisms.",
+      "techStack": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "Firebase",
+        "Gemini API"
+      ],
+      "links": {
+        "github": "https://github.com/patilmanas04/GDG-Hack2skill-The-Genesis-Group",
+        "live": "https://classmantra.netlify.app/"
+      }
+    },
+    {
+      "id": "proj_9",
+      "title": "Zero: The Focus App",
+      "type": "Project",
+      "description": "A productivity and focus application featuring a minimalist UI design heavily inspired by the Nothing OS dot-matrix aesthetic.",
+      "techStack": ["Flutter"],
+      "links": {
+        "github": "https://github.com/patilmanas04/zero-focus-app",
+        "live": "https://drive.google.com/file/d/1A8Ji-FM0HbTWFm6r3p6Q1mRkC38ZATf8/view"
+      }
+    },
+    {
+      "id": "proj_10",
+      "title": "Language Translator Android Application",
+      "type": "Project",
+      "description": "A mobile application for translating text between multiple languages utilizing Firebase ML capabilities for seamless translation.",
+      "techStack": ["Android Studio", "Firebase"],
+      "links": {
+        "github": "https://github.com/patilmanas04/Language-Translator-Mobile-Application",
+        "live": ""
+      }
+    }
+  ],
+  "research": [
+    {
+      "id": "res_1",
+      "title": "Data-Driven Rockfall Assessment using Synthetic Training and CNN–XGBoost Integration",
+      "conference": "7th MIND 2025 International Conference, Jaipur",
+      "description": "Engineered a hybrid deep learning model using Synthetic Training and CNN-XGBoost integration to predict physical anomalies in open-pit mines. Structured complex datasets and optimized the neural network architecture.",
+      "techStack": ["Python", "PyTorch", "XGBoost", "pandas", "NumPy"],
+      "images": []
+    }
+  ],
+  "community": [
+    {
+      "id": "com_1",
+      "role": "Chairperson",
+      "organization": "ACM AMTICS Student Chapter",
+      "timeline": "June 2025 - April 2026",
+      "description": "Led the student chapter, organizing the TecXplore tech fest and fostering a community of developers.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778777348/chairperson0_ecth1l.png"
+      ]
+    },
+    {
+      "id": "com_2",
+      "role": "Youth Leader & Multi-Talented Award Winner",
+      "organization": "9th Uth Fest, Uka Tarsadia University",
+      "timeline": "2025",
+      "description": "Awarded the title of Multi-Talented and recognized as the Youth Leader of the University.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778778604/youth_leader0_pl0m5v.png",
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778778799/youth_leader1_ct9pvq.jpg"
+      ]
+    },
+    {
+      "id": "com_3",
+      "role": "Session Expert and Speaker",
+      "organization": "Asha M. Tarsadia Institute of Computer Science and Technology, Uka Tarsadia University",
+      "timeline": "February 18, 2026",
+      "description": "Conducted a workshop on 'Chatbot Development' as a part of the Annual Technical Festival - TecXplore 2026.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778786117/appreciation_letter_chatbot_workshop_fo4kpb.jpg"
+      ]
+    },
+    {
+      "id": "com_4",
+      "role": "Session Expert and Speaker",
+      "organization": "Asha M. Tarsadia Institute of Computer Science and Technology, Uka Tarsadia University",
+      "timeline": "September 15, 2025",
+      "description": "Delivered an expert session for AMTICS Talk on Retrieval-Augmented Generation (RAG) and LLMs as a part of the Engineer's Day Celebration - Pravaah 2025.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778786117/appreciation_letter_rag_workshop_pbsset.jpg"
+      ]
+    },
+    {
+      "id": "com_5",
+      "role": "Lead Anchor",
+      "organization": "Uka Tarsadia University, Bardoli, Gujarat",
+      "timeline": "March 18, 2026",
+      "description": "Served as the lead anchor in the Mimicry event at the 10th Uth Fest 2026.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778788000/lead_anchor_d4zg81.jpg"
+      ]
+    },
+    {
+      "id": "com_6",
+      "role": "Champion",
+      "organization": "Intercollegiate Badminton Tournament",
+      "timeline": "2024 & 2026",
+      "description": "Won the Intercollegiate Badminton Tournament two times.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778779724/badminton_champion0_ve26th.jpg"
+      ]
+    },
+    {
+      "id": "com_7",
+      "role": "Project Lead",
+      "organization": "UTU Idea Hunt",
+      "timeline": "2024",
+      "description": "Secured Rs 1,50,000 funding for developing an ECG predictive model.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778780065/utu_idea_hunt0_ifphpm.jpg",
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778780300/utu_idea_hunt1_vth6bs.jpg"
+      ]
+    },
+    {
+      "id": "com_8",
+      "role": "Leadership",
+      "organization": "AMTICS, Uka Tarsadia University",
+      "timeline": "2022 - 2026",
+      "description": "Organized and led multiple technical and cultural fests, including TecXplore, the largest annual tech fest at the college.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778780517/leadership0_a4qgo8.jpg",
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778780518/leadership1_nvsuia.jpg"
+      ]
+    },
+    {
+      "id": "com_9",
+      "role": "NSS Volunteer",
+      "organization": "National Service Scheme (NSS)",
+      "timeline": "2023 - 2025",
+      "description": "Volunteered for nearly two years, actively participating in and leading multiple social initiatives including cleanliness drives, blood donation camps, distributing essentials to underprivileged people, and tree plantation drives. Developed a strong sense of social responsibility, teamwork, and leadership.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778788002/nss_kturkh.jpg"
+      ]
+    },
+    {
+      "id": "com_10",
+      "role": "Lead Editor",
+      "organization": "\"Excuse me AMTICS!\" Magazine",
+      "timeline": "2023 - 2025",
+      "description": "Served as the Lead Editor for the college magazine, successfully curating and releasing over 20 issues.",
+      "images": [
+        "https://res.cloudinary.com/dtcremvnr/image/upload/v1778788253/magazine_zzv6yh.jpg"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "art_1",
+      "slug": "understanding-backpropagation-and-gradient-descent-in-neural-networks",
+      "title": "Understanding Backpropagation and Gradient Descent in Neural Networks",
+      "platform": "Dev.to",
+      "date": "June 23, 2025",
+      "link": "https://dev.to/patilmanas/understanding-backpropagation-and-gradient-descent-in-neural-networks-2heb",
+      "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fu5rrwlyd6lwcs4q36tp2.png",
+      "previewText": "Suppose you're building a neural network, maybe even a deep and complex one. You've set up the layers, initialized weights, and defined activation functions. But here's a question: Can this neural network make accurate predictions without tuning? The short answer: No. Building a neural network is just the start, the real magic lies in fine-tuning its parameters (i.e., weights and biases) so it actually learns from the data.",
+      "summary": "This technical deep-dive breaks down the mathematical backbone of neural network optimization. It explains why primitive weight-guessing methods fail and explores how calculus provides a deterministic solution. The article mathematically deconstructs how backpropagation computes loss gradients via the chain rule, and how Gradient Descent utilizes learning rates to iteratively update weights and biases to minimize error.",
+      "tags": ["ai", "beginners", "machinelearning", "learning"]
+    },
+    {
+      "id": "art_2",
+      "slug": "react-context-api-made-simple",
+      "title": "React Context API Made Simple: What, Why & How I Use It in Real Projects",
+      "platform": "Dev.to",
+      "date": "May 29, 2025",
+      "link": "https://dev.to/patilmanas/react-context-api-made-simple-what-why-how-i-use-it-in-real-projects-3i84",
+      "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwsbphbnvgvqe4bbds1kr.png",
+      "previewText": "Suppose you're working on a large project and find yourself drilling props down multiple layers of components. And every time a prop needs to be updated, you repeat the same tedious process, updating it in every intermediate component. Isn't that frustrating? Wouldn't it be great if you could store all your useState variables and helpful functions in one central place and access them anywhere in your app with a single line of code?",
+      "summary": "This guide provides a hands-on architectural approach to eliminating prop drilling in scalable React applications. It covers step-by-step implementation, from creating global state providers to consuming context via useContext. It also highlights real-world architectural patterns like injecting Firebase authentication globally and addresses performance anti-patterns regarding frequently changing states.",
+      "tags": ["react", "webdev", "beginners", "productivity"]
+    },
+    {
+      "id": "art_3",
+      "slug": "boost-your-react-projects-with-firebase",
+      "title": "Boost Your React Projects with Firebase: Authentication, Firestore, and Hosting in One Go",
+      "platform": "Dev.to",
+      "date": "May 19, 2025",
+      "link": "https://dev.to/patilmanas/boost-your-react-projects-with-firebase-authentication-firestore-and-hosting-in-one-go-48i3",
+      "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fe03x2wsaufzcivu02ysh.png",
+      "previewText": "You might think you need to: Set up a database (and pay for it), Create a custom authentication system, Add features like Google, Facebook, or Microsoft login, Write backend code for all of this, Find a separate service to host the backend, Purchase a domain and find reliable hosting. That's a lot of work! 😅 But what if I told you there's a complete solution — and it's from Google.",
+      "summary": "This piece outlines the rapid integration of Google's Firebase Backend-as-a-Service (BaaS) into a modern React application. It details the initialization of the Firebase SDK, the implementation of robust user authentication flows, executing CRUD operations within Firestore's real-time NoSQL database, and deploying the final optimized build using the Firebase CLI.",
+      "tags": ["firebase", "react", "webdev", "productivity"]
+    },
+    {
+      "id": "art_4",
+      "slug": "what-i-learned-building-an-ai-powered-teacher-assistant",
+      "title": "What I Learned Building an AI-Powered Teacher Assistant for the GDG Solution Challenge 2025",
+      "platform": "Dev.to",
+      "date": "May 11, 2025",
+      "link": "https://dev.to/patilmanas/what-i-learned-building-an-ai-powered-teacher-assistant-for-the-gdg-solution-challenge-2025-k4i",
+      "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fmvfb4jfhy6wj960vbqlq.png",
+      "previewText": "The Google Developer Student Clubs (GDSC) Solution Challenge is a hackathon-style event that encourages students to build innovative projects using Google technologies — all while solving real-world problems aligned with the United Nations Sustainable Development Goals (SDGs). This year, I challenged myself to build something meaningful, something that could solve a real problem. I stumbled upon the Solution Challenge while scrolling through LinkedIn — and it instantly clicked. I brought together a passionate team, and we dived in.",
+      "summary": "This technical postmortem details the development lifecycle of \"ClassMantra,\" an AI-powered teaching assistant built for the GDG Solution Challenge. It explores the architectural decisions behind integrating generative AI capabilities with a robust frontend, managing real-time data states with Firebase, and overcoming the engineering hurdles of building scalable educational AI tools under pressure.",
+      "tags": ["react", "webdev", "learning", "productivity"]
+    }
+  ],
+  "links": {
+    "github": "https://github.com/patilmanas04",
+    "linkedin": "https://linkedin.com/in/patilmanas/",
+    "devto": "https://dev.to/patilmanas",
+    "resume": "https://drive.google.com/file/d/1M4I0xofwmJAC-m4xbxWq9pZnmhSnkCyg/view?usp=drive_link",
+    "instagram": "https://www.instagram.com/patilmanas04/"
+  }
+}
